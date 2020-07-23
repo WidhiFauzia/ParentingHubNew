@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/raleway_regular</item>
+    </style>
+
+    <style name="TextAppearanceBold" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/raleway_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextAppearance" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="android:fontFamily">@font/raleway_regular</item>
+    </style>
+
+    <style name="CustomDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

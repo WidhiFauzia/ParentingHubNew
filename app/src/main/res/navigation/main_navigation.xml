@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_screen_navigation"
+    app:startDestination="@id/fragmentWelcome">
+
+    <fragment
+    android:id="@+id/fragmentWelcome"
+    android:name="com.myapps.parentinghubnew.fragment.WelcomeScreenFragment"
+    tools:layout="@layout/fragment_welcome_screen">
+
+        <action
+            android:id="@+id/actionLoginFragment"
+            app:destination="@id/fragmentLogin" />
+
+        <action
+            android:id="@+id/actionRegisterFragment"
+            app:destination="@+id/fragmentRegister"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.myapps.parentinghubnew.fragment.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/actionLoginRegisterFragment"
+            app:destination="@+id/fragmentRegister"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/actionFormRegister"
+            app:destination="@+id/fragmentFormRegister"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFormRegister"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterFormFragment"
+        tools:layout="@layout/fragment_register_form">
+
+        <action
+            android:id="@+id/actionKidRegister"
+            app:destination="@+id/fragmentKidRegister"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegister"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidConfirmFragment"
+        tools:layout="@layout/fragment_kid_register_confirm">
+
+        <action
+            android:id="@+id/actionKidRegisterStep1"
+            app:destination="@+id/fragmentKidRegisterStep1"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep1"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep1Fragment"
+        tools:layout="@layout/fragment_register_kid_step1">
+
+        <action
+            android:id="@+id/actionKidRegisterBack"
+            app:destination="@+id/fragmentKidRegister"/>
+
+        <action
+            android:id="@+id/actionKidRegisterPregnantAndKid"
+            app:destination="@+id/fragmentKidRegisterStep2"/>
+
+        <action
+            android:id="@+id/actionKidRegisterProgram"
+            app:destination="@+id/fragmentKidRegisterProgram"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep2"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep2Fragment"
+        tools:layout="@layout/fragment_register_kid_step2">
+
+        <action
+            android:id="@+id/actionKidRegisterStep2Back"
+            app:destination="@+id/fragmentKidRegisterStep1"/>
+
+        <action
+            android:id="@+id/actionKidRegisterStep3"
+            app:destination="@+id/fragmentKidRegisterStep3"/>
+
+        <argument
+            android:name="numberOfKids"
+            android:defaultValue="0"
+            app:argType="integer"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep3"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep3Fragment"
+        tools:layout="@layout/fragment_register_kid_step3">
+
+        <action
+            android:id="@+id/actionKidRegisterForm"
+            app:destination="@+id/fragmentKidRegisterForm"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterProgram"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterProgramFragment"
+        tools:layout="@layout/fragment_register_program">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterForm"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidFormFragment"
+        tools:layout="@layout/fragment_register_kid_form">
+
+        <action
+            android:id="@+id/actionKidRegisterStep4"
+            app:destination="@+id/fragmentKidRegisterStep4"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep4"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep4Fragment"
+        tools:layout="@layout/fragment_register_kid_step4">
+
+        <action
+            android:id="@+id/actionKidRegisterStep5"
+            app:destination="@+id/fragmentKidRegisterStep5"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep5"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep5Fragment"
+        tools:layout="@layout/fragment_register_kid_step5">
+
+        <action
+            android:id="@+id/actionKidRegisterStep6"
+            app:destination="@+id/fragmentKidRegisterStep6"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep6"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep6Fragment"
+        tools:layout="@layout/fragment_register_kid_step6">
+
+        <action
+            android:id="@+id/actionKidRegisterStep7"
+            app:destination="@+id/fragmentKidRegisterStep7"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep7"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep7Fragment"
+        tools:layout="@layout/fragment_register_kid_step7">
+
+        <action
+            android:id="@+id/actionKidRegisterStep8"
+            app:destination="@+id/fragmentKidRegisterStep8"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep8"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep8Fragment"
+        tools:layout="@layout/fragment_register_kid_step8">
+
+        <action
+            android:id="@+id/actionKidRegisterStep9"
+            app:destination="@+id/fragmentKidRegisterStep9"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep9"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep9Fragment"
+        tools:layout="@layout/fragment_register_kid_step9">
+
+        <action
+            android:id="@+id/actionKidRegisterStep10"
+            app:destination="@+id/fragmentKidRegisterStep10"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep10"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep10Fragment"
+        tools:layout="@layout/fragment_register_kid_step10">
+
+        <action
+            android:id="@+id/actionKidRegisterStep11"
+            app:destination="@+id/fragmentKidRegisterStep11"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentKidRegisterStep11"
+        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep11Fragment"
+        tools:layout="@layout/fragment_register_kid_step11">
+
+    </fragment>
+
+</navigation>

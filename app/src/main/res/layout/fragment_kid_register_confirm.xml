@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragment.RegisterKidConfirmFragment">
+
+    <ImageView
+        android:id="@+id/bg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_pink_confirm"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/bg_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg__top_confirm"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_ingatkanSayaNanti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_lightblue"
+            android:text="@string/tidak_ingatkan_saya_nanti"
+            android:layout_margin="15dp"
+            android:textSize="16sp"
+            style="@style/TextAppearance1"
+            android:textColor="@color/colorText"
+            app:layout_constraintTop_toBottomOf="@id/btn_iya" />
+
+        <Button
+            android:id="@+id/btn_iya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_pink"
+            android:text="@string/ya_saya_bersedia"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            android:textSize="16sp"
+            style="@style/TextAppearance1"
+            app:layout_constraintTop_toBottomOf="@id/tv_about"
+            app:layout_constraintBottom_toTopOf="@id/btn_ingatkanSayaNanti"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kid_register_confirm_text"
+            android:textColor="@color/colorText"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            style="@style/TextAppearance1"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selamat_bergabung_parents"
+            android:textColor="@color/colorBlueBackground"
+            style="@style/TextAppearanceBold"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/title_group"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
