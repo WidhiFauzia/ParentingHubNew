@@ -29,6 +29,17 @@
             android:id="@+id/actionLoginRegisterFragment"
             app:destination="@+id/fragmentRegister"/>
 
+        <action
+            android:id="@+id/actionHome"
+            app:destination="@+id/fragmentBottomNav"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentBottomNav"
+        android:name="com.myapps.parentinghubnew.fragment.BottomNavFragment"
+        tools:layout="@layout/fragment_bottom_nav">
+
     </fragment>
 
     <fragment

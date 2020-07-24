@@ -19,7 +19,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
             findNavController().navigateUp()
         }
 
-        btn_masuk_register.setOnClickListener {
+        btn_masuk.setOnClickListener {
             findNavController().navigate(R.id.actionFormRegister)
         }
     }

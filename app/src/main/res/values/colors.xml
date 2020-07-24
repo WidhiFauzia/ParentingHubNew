@@ -11,4 +11,6 @@
     <color name="colorBlueBackground">#40C5E5</color>
     <color name="colorPink">#EB77AB</color>
     <color name="colorBlueLight">#EAFBFF</color>
+    <color name="colorBlueFacebook">#1A77F2</color>
+    <color name="colorBlueGoogle">#4285F4</color>
 </resources>

@@ -22,5 +22,9 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         tv_title5.setOnClickListener {
             findNavController().navigate(R.id.actionLoginRegisterFragment)
         }
+
+        btn_masuk.setOnClickListener {
+            findNavController().navigate(R.id.actionHome)
+        }
     }
 }

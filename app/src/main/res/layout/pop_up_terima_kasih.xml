@@ -13,9 +13,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:padding="12dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="2dp"
+            android:padding="@dimen/margin_small_medium"
+            app:cardCornerRadius="@dimen/margin_small"
+            app:cardElevation="@dimen/cardview_default_elevation"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent">
@@ -26,12 +26,12 @@
                 android:background="@drawable/ic_baseline_close_24"
                 android:id="@+id/iv_close"
                 android:layout_gravity="end"
-                android:layout_margin="10dp"/>
+                android:layout_margin="@dimen/margin_small"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="30dp">
+                android:paddingBottom="@dimen/margin_medium_large">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
                     android:background="@drawable/thank_you"
                     android:id="@+id/iv_center"
                     android:layout_gravity="end"
-                    android:layout_margin="40dp"
+                    android:layout_margin="@dimen/margin_medium_large"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"/>
@@ -48,7 +48,7 @@
                     android:id="@+id/tvAlert"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
+                    android:layout_margin="@dimen/margin_medium"
                     android:gravity="center"
                     android:text="@string/terima_kasih_parents_telah_berpartisipasi"
                     android:textColor="@color/colorBlueBackground"

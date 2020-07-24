@@ -26,7 +26,7 @@
                 android:layout_height="75dp"
                 android:background="@drawable/bg_circle_image"
                 android:id="@+id/iv_profil"
-                android:layout_margin="15dp"
+                android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"/>
 
@@ -39,7 +39,7 @@
                 style="@style/TextAppearance1"
                 android:textColor="@color/colorText"
                 android:textSize="14sp"
-                android:layout_margin="15dp"
+                android:layout_margin="@dimen/margin_medium"
                 android:padding="15sp"
                 android:inputType="textMultiLine"
                 android:gravity="start"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/btn_add_image"
             android:id="@+id/btn_add_image"
-            android:layout_margin="70dp"
+            android:layout_margin="@dimen/margin_large"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -66,10 +66,10 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="Nama Lengkap"
             style="@style/EditTextAppearance"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
-            android:padding="15dp"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
             android:inputType="text"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/btn_add_image"/>
@@ -81,14 +81,14 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="Tanggal Lahir"
             style="@style/EditTextAppearance"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
-            android:padding="15dp"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
             android:focusable="false"
             android:inputType="date"
             android:textSize="14sp"
-            android:drawableRight="@drawable/ic_baseline_today_24"
+            android:drawableEnd="@drawable/ic_baseline_today_24"
             app:layout_constraintTop_toBottomOf="@id/et_name"/>
 
         <EditText
@@ -98,19 +98,19 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="Jenis Kelamin"
             style="@style/EditTextAppearance"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
-            android:padding="15dp"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:padding="@dimen/margin_medium"
             android:inputType="text"
             android:textSize="14sp"
-            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
             app:layout_constraintTop_toBottomOf="@id/et_birth"/>
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="@dimen/margin_medium"
             android:text="@string/dia_sangat_spesial"
             style="@style/TextAppearance1"
             android:textColor="@color/colorText"
@@ -120,12 +120,12 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <ImageView
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="@dimen/margin_medium"
+            android:layout_height="@dimen/margin_medium"
             android:background="@drawable/btn_alert"
             android:id="@+id/alert"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
             app:layout_constraintTop_toBottomOf="@id/et_gender"
             app:layout_constraintRight_toRightOf="parent"/>
 
