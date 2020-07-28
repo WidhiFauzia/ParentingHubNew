@@ -11,85 +11,87 @@
         android:id="@+id/iv_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_top_kid_register"
+        android:background="@drawable/ic_circle_page_register_step_1"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/iv_title"
-        android:layout_width="255dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="@dimen/margin_elevation"
-        android:layout_marginTop="@dimen/margin_medium"
-        app:layout_constraintLeft_toRightOf="@id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_parentinghub_x_parentingregistry"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        app:layout_constraintStart_toEndOf="@id/iv_back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_back"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginStart="@dimen/margin_medium"
-        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_large"
+        android:layout_marginTop="@dimen/margin_small_large"
+        android:background="@drawable/ic_back_white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_sebelumnya"
-        style="@style/TextAppearance1"
+        android:textAppearance="@style/TextBody2Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_button_lightblue"
         android:text="@string/sebelumnya"
         android:textColor="@color/colorText"
-        android:textSize="14sp"
         android:layout_marginEnd="@dimen/margin_small"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small_medium"
         android:layout_marginBottom="@dimen/margin_small"
         android:paddingEnd="@dimen/margin_large"
         android:paddingStart="@dimen/margin_large"
+        app:backgroundTint="@color/colorLightBlue"
+        app:cornerRadius="@dimen/margin_medium_large"
         app:layout_constraintEnd_toStartOf="@+id/btn_selanjutnya"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_selanjutnya"
-        style="@style/TextAppearance1"
+        android:textAppearance="@style/TextBody2Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_button_blue"
         android:text="@string/selanjutnya"
-        android:textSize="14sp"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small_medium"
         android:layout_marginBottom="@dimen/margin_small"
         android:paddingEnd="@dimen/margin_large"
         android:paddingStart="@dimen/margin_large"
+        android:textColor="@color/colorWhite"
+        app:backgroundTint="@color/colorBlueBackground"
+        app:cornerRadius="@dimen/margin_medium_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_sebelumnya"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-    <androidx.viewpager2.widget.ViewPager2
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/viewPagerFeedback"
-        android:layout_marginTop="@dimen/margin_medium"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcv_feedback"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingEnd="@dimen/margin_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
         app:layout_constraintBottom_toTopOf="@id/btn_sebelumnya"/>
 
     <TextView
         android:id="@+id/tv_title"
-        style="@style/TextAppearanceBold"
+        android:textAppearance="@style/TextTitleSemiBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="@dimen/margin_medium_xlarge"
         android:text="@string/bagaimana_perasaan_parents_mengenai_perjalanan_ini"
         android:textColor="@color/colorBlueBackground"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

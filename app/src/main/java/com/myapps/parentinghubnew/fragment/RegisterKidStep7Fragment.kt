@@ -35,5 +35,13 @@ class RegisterKidStep7Fragment : Fragment(R.layout.fragment_register_kid_step7) 
                 mAlertDialog.dismiss()
             }
         }
+
+        btn_sebelumnya.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
+        iv_back.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 }

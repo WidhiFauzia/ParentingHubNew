@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="150dp"
-    android:layout_height="wrap_content"
+    android:layout_width="140dp"
+    android:layout_height="140dp"
     android:backgroundTint="@color/colorWhite"
     app:cardBackgroundColor="#ccffffff"
     app:cardCornerRadius="@dimen/margin_small_medium"
-    android:layout_margin="@dimen/margin_small"
+    android:layout_margin="@dimen/margin_small_medium"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_medium_large">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_medium">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/kidAvatar"
-            android:background="@drawable/baby_girl"
+            android:background="@drawable/ic_baby_girl"
             android:layout_margin="@dimen/margin_medium"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -28,9 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Perkembangan"
-            style="@style/TextAppearance1"
+            android:textAppearance="@style/TextBody2Regular"
             android:textColor="@color/colorText"
-            android:textSize="14dp"
             android:id="@+id/tv_title"
             android:layout_margin="@dimen/margin_small_medium"
             app:layout_constraintTop_toBottomOf="@id/kidAvatar"
@@ -41,10 +40,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ke-23"
-            style="@style/TextAppearanceBold"
+            android:textAppearance="@style/TextBody2Bold"
             android:textColor="@color/colorText"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:id="@+id/tv_nama"
             android:layout_margin="@dimen/margin_small_medium"
             app:layout_constraintTop_toBottomOf="@id/tv_title"

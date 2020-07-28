@@ -6,8 +6,13 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_small_medium">12dp</dimen>
     <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_medium_small">24dp</dimen>
     <dimen name="margin_medium_large">32dp</dimen>
+    <dimen name="margin_small_large">48dp</dimen>
     <dimen name="margin_large">60dp</dimen>
     <dimen name="margin_xlarge">64dp</dimen>
     <dimen name="margin_medium_xlarge">68dp</dimen>
+    <dimen name="margin_large_xlarge">74dp</dimen>
+    <dimen name="margin_xxlarge">80dp</dimen>
+    <dimen name="margin_medium_xxlarge">95dp</dimen>
 </resources>

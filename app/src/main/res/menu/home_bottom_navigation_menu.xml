@@ -24,7 +24,7 @@
 
     <item
         android:id="@+id/navigation_profile_menu"
-        android:icon="@drawable/bg_circle_image_blue"
+        android:icon="@drawable/ic_life_partner"
         android:title="Profile" />
 
 </menu>

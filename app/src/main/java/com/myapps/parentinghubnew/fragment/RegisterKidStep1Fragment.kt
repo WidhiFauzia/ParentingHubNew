@@ -16,24 +16,36 @@ class RegisterKidStep1Fragment : Fragment(R.layout.fragment_register_kid_step1) 
             findNavController().navigate(R.id.actionKidRegisterBack)
         }
 
-        btn_selanjutnya.setOnClickListener {
-
-        }
-
         iv_back.setOnClickListener {
             findNavController().navigateUp()
         }
 
         cv_anak.setOnClickListener {
-            findNavController().navigate(R.id.actionKidRegisterPregnantAndKid)
+            cv_anak.setChecked(!cv_anak.isChecked)
         }
 
         cv_ibu.setOnClickListener {
-            findNavController().navigate(R.id.actionKidRegisterPregnantAndKid)
+            cv_ibu.setChecked(!cv_ibu.isChecked)
         }
 
         cv_program.setOnClickListener {
-            findNavController().navigate(R.id.actionKidRegisterProgram)
+            cv_program.setChecked(!cv_program.isChecked)
+        }
+
+        if(cv_anak.isChecked && cv_ibu.isChecked){
+            cv_program.isEnabled = false
+            cv_program.isClickable = false
+            cv_program.isCheckable = false
+            cv_program.isFocusable = false
+        }
+
+        btn_selanjutnya.setOnClickListener {
+            if(cv_anak.isChecked && cv_ibu.isChecked){
+                findNavController().navigate(R.id.actionKidRegisterPregnantAndKid)
+            }
+            else if(cv_program.isChecked){
+                findNavController().navigate(R.id.actionKidRegisterProgram)
+            }
         }
     }
 }

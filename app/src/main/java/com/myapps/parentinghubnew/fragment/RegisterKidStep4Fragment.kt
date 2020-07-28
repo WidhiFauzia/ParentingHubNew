@@ -25,7 +25,7 @@ class RegisterKidStep4Fragment : Fragment(R.layout.fragment_register_kid_step4) 
             findNavController().navigateUp()
         }
 
-        btn_simpan_data.setOnClickListener {
+        btn_simpan.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep5)
         }
 
@@ -43,6 +43,14 @@ class RegisterKidStep4Fragment : Fragment(R.layout.fragment_register_kid_step4) 
                 }, year, month, day)
 
             dpd.show()
+        }
+
+        btn_sebelumnya.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
+        iv_back.setOnClickListener {
+            findNavController().navigateUp()
         }
 
     }

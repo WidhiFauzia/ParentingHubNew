@@ -30,7 +30,7 @@
     <string name="saya_masih_program">Saya masih program</string>
     <string name="sebelumnya">Sebelumnya</string>
     <string name="selanjutnya">Selanjutnya</string>
-    <string name="keluarga_semakin_ramai_dengan_si_kecil">Keluarga semakin ramai dengan si Kecil!</string>
+    <string name="keluarga_semakin_ramai_dengan_si_kecil">Keluarga semakin ramai dengan \nsi Kecil!</string>
     <string name="berapa_jumlah_anak_anda_termasuk_dengan_yang_sedang_dikandung">Berapa jumlah anak Anda termasuk dengan \nyang sedang dikandung?</string>
     <string name="apakah_parents_bersedia_mengisi_profil_si_kecil">Apakah Parents bersedia \nmengisi profil si Kecil?</string>
     <string name="hebat_parents_satu_langkah_lebih_maju_dari_yang_lainnya">Hebat! Parents satu langkah \nlebih maju dari yang \nlainnya!</string>
@@ -76,4 +76,12 @@
     <string name="youtube_channel">YouTube Channel</string>
     <string name="blog">Blog</string>
     <string name="kode_pos">Kode Pos</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="masuk_sekarang"><u>Masuk Sekarang</u></string>
+    <string name="tunanetra">Tunanetra</string>
+    <string name="tunarungu">Tunarungu</string>
+    <string name="tunagrahita">Tunagrahita</string>
+    <string name="tunadaksa">Tunadaksa</string>
+    <string name="kesulitan_belajar">Kesulitan Belajar</string>
+    <string name="autisme">Autisme</string>
 </resources>

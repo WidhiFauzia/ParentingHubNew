@@ -21,5 +21,9 @@ class RegisterKidStep10Fragment : Fragment(R.layout.fragment_register_kid_step10
         iv_back.setOnClickListener {
             findNavController().navigateUp()
         }
+
+        btn_sebelumnya.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 }

@@ -31,5 +31,9 @@ class RegisterKidFormFragment : Fragment(R.layout.fragment_register_kid_form) {
             findNavController().navigateUp()
         }
 
+        btn_sebelumnya.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
     }
 }

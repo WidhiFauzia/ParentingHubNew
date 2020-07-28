@@ -6,14 +6,14 @@
     android:background="@color/colorWhite"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="15dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="2dp">
+    android:layout_margin="@dimen/margin_medium"
+    app:cardCornerRadius="@dimen/margin_small"
+    app:cardElevation="@dimen/cardview_default_elevation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp">
+        android:layout_marginBottom="@dimen/margin_medium">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -31,16 +31,15 @@
                 app:layout_constraintLeft_toLeftOf="parent"/>
 
             <EditText
-                android:layout_width="260dp"
+                android:layout_width="255dp"
                 android:layout_height="75dp"
                 android:id="@+id/et_about"
                 android:background="@drawable/bg_edittext_lightblue"
                 android:hint="Tentang Si Kecil"
-                style="@style/TextAppearance1"
+                android:textAppearance="@style/TextBody2Regular"
                 android:textColor="@color/colorText"
-                android:textSize="14sp"
                 android:layout_margin="@dimen/margin_medium"
-                android:padding="15sp"
+                android:padding="@dimen/margin_medium"
                 android:inputType="textMultiLine"
                 android:gravity="start"
                 android:scrollbarStyle="insideInset"
@@ -53,9 +52,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_add_image"
+            android:background="@drawable/ic_add_image"
             android:id="@+id/btn_add_image"
-            android:layout_margin="@dimen/margin_large"
+            android:layout_margin="@dimen/margin_medium_xlarge"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -65,14 +64,13 @@
             android:layout_height="45dp"
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="Nama Lengkap"
-            style="@style/EditTextAppearance"
+            android:textAppearance="@style/TextBody2Regular"
             android:layout_marginLeft="@dimen/margin_medium"
             android:layout_marginRight="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:inputType="text"
-            android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/btn_add_image"/>
+            app:layout_constraintTop_toBottomOf="@id/layout1"/>
 
         <EditText
             android:id="@+id/et_birth"
@@ -80,14 +78,13 @@
             android:layout_height="45dp"
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="Tanggal Lahir"
-            style="@style/EditTextAppearance"
+            android:textAppearance="@style/TextBody2Regular"
             android:layout_marginLeft="@dimen/margin_medium"
             android:layout_marginRight="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:focusable="false"
             android:inputType="date"
-            android:textSize="14sp"
             android:drawableEnd="@drawable/ic_baseline_today_24"
             app:layout_constraintTop_toBottomOf="@id/et_name"/>
 
@@ -97,24 +94,23 @@
             android:layout_height="45dp"
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="Jenis Kelamin"
-            style="@style/EditTextAppearance"
+            android:textAppearance="@style/TextBody2Regular"
             android:layout_marginLeft="@dimen/margin_medium"
             android:layout_marginRight="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:inputType="text"
-            android:textSize="14sp"
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
             app:layout_constraintTop_toBottomOf="@id/et_birth"/>
 
         <CheckBox
+            android:id="@+id/cb_spesial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_medium"
             android:text="@string/dia_sangat_spesial"
-            style="@style/TextAppearance1"
+            android:textAppearance="@style/TextBody2Regular"
             android:textColor="@color/colorText"
-            android:textSize="14sp"
             android:buttonTint="@color/colorBlueBackground"
             app:layout_constraintTop_toBottomOf="@id/et_gender"
             app:layout_constraintLeft_toLeftOf="parent"/>
@@ -122,12 +118,101 @@
         <ImageView
             android:layout_width="@dimen/margin_medium"
             android:layout_height="@dimen/margin_medium"
-            android:background="@drawable/btn_alert"
-            android:id="@+id/alert"
+            android:background="@drawable/ic_info"
+            android:id="@+id/info"
             android:layout_marginEnd="@dimen/margin_medium"
-            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_small"
             app:layout_constraintTop_toBottomOf="@id/et_gender"
             app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutKebutuhanSpesial"
+            app:layout_constraintTop_toBottomOf="@id/cb_spesial">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <CheckBox
+                    android:id="@+id/cb_tunanetra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tunanetra"
+                    android:textAppearance="@style/TextBody2Regular"
+                    android:textColor="@color/colorText"
+                    android:buttonTint="@color/colorBlueBackground" />
+
+                <CheckBox
+                    android:id="@+id/cb_tunarungu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tunarungu"
+                    android:textAppearance="@style/TextBody2Regular"
+                    android:textColor="@color/colorText"
+                    android:buttonTint="@color/colorBlueBackground" />
+
+                <CheckBox
+                    android:id="@+id/cb_tunagrahita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tunagrahita"
+                    android:textAppearance="@style/TextBody2Regular"
+                    android:textColor="@color/colorText"
+                    android:buttonTint="@color/colorBlueBackground"
+                    app:layout_constraintTop_toBottomOf="@id/et_gender"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear1">
+
+                <CheckBox
+                    android:id="@+id/cb_tunadaksa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tunadaksa"
+                    android:textAppearance="@style/TextBody2Regular"
+                    android:textColor="@color/colorText"
+                    android:buttonTint="@color/colorBlueBackground" />
+
+                <CheckBox
+                    android:id="@+id/cb_kesulitan_belajar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kesulitan_belajar"
+                    android:textAppearance="@style/TextBody2Regular"
+                    android:textColor="@color/colorText"
+                    android:buttonTint="@color/colorBlueBackground" />
+
+                <CheckBox
+                    android:id="@+id/cb_autisme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autisme"
+                    android:textAppearance="@style/TextBody2Regular"
+                    android:textColor="@color/colorText"
+                    android:buttonTint="@color/colorBlueBackground"
+                    app:layout_constraintTop_toBottomOf="@id/et_gender"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

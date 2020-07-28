@@ -12,8 +12,8 @@ import kotlinx.android.synthetic.main.item_feedback.view.*
 class ViewPager2Adapter : RecyclerView.Adapter<ViewPager2Adapter.Pager2ViewHolder>() {
 
     var idList = mutableListOf(1,2,3)
-    var titleList = mutableListOf("Sangat Tertarik!", "Merasa Kewalahan", "Merasa Kewalahan")
-    var imageList = mutableListOf(R.drawable.happy, R.drawable.sad, R.drawable.cool)
+    var titleList = mutableListOf("Sangat Menyenangkan", "Merasa Kewalahan", "Mencari Tahu")
+    var imageList = mutableListOf(R.drawable.ic_sangat_menyenangkan, R.drawable.ic_merasa_kewalahan, R.drawable.ic_mencari_tahu)
 
     inner class Pager2ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val tv_title = itemView.findViewById<TextView>(R.id.tv_title)

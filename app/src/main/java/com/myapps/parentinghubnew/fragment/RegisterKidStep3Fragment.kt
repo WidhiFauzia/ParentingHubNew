@@ -31,5 +31,13 @@ class RegisterKidStep3Fragment : Fragment(R.layout.fragment_register_kid_step3) 
             }
         }
 
+        btn_sebelumnya.setOnClickListener {
+            findNavController().navigate(R.id.actionKidRegisterStep2)
+        }
+
+        iv_back.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
     }
 }

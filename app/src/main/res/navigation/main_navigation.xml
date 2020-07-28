@@ -51,6 +51,10 @@
             android:id="@+id/actionFormRegister"
             app:destination="@+id/fragmentFormRegister"/>
 
+        <action
+            android:id="@+id/actionLogin"
+            app:destination="@+id/fragmentLogin"/>
+
     </fragment>
 
     <fragment
@@ -122,6 +126,10 @@
         <action
             android:id="@+id/actionKidRegisterForm"
             app:destination="@+id/fragmentKidRegisterForm"/>
+
+        <action
+            android:id="@+id/actionKidRegisterStep2"
+            app:destination="@+id/fragmentKidRegisterStep2"/>
 
     </fragment>
 

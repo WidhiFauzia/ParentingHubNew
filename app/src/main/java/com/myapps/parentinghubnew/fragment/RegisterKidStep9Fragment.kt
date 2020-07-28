@@ -35,5 +35,9 @@ class RegisterKidStep9Fragment : Fragment(R.layout.fragment_register_kid_step9) 
                 mAlertDialog.dismiss()
             }
         }
+
+        btn_sebelumnya.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 }

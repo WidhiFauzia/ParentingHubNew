@@ -36,7 +36,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/thank_you"
+                    android:background="@drawable/ic_thank_you"
                     android:id="@+id/iv_center"
                     android:layout_gravity="end"
                     android:layout_margin="@dimen/margin_medium_large"
@@ -52,8 +52,7 @@
                     android:gravity="center"
                     android:text="@string/terima_kasih_parents_telah_berpartisipasi"
                     android:textColor="@color/colorBlueBackground"
-                    android:textSize="16sp"
-                    android:textAppearance="@style/TextAppearanceBold"
+                    android:textAppearance="@style/TextTitleSemiBold"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/iv_center" />

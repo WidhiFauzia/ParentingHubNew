@@ -11,7 +11,7 @@ import com.myapps.parentinghubnew.R
 class KidListAdapter : RecyclerView.Adapter<KidListAdapter.ViewHolder>() {
 
     var listNama = mutableListOf("Ke-23", "Jessy", "Jaden")
-    var listAvatar = mutableListOf(R.drawable.baby_girl, R.drawable.gurl, R.drawable.boy)
+    var listAvatar = mutableListOf(R.drawable.ic_baby_girl, R.drawable.ic_girl, R.drawable.ic_boy)
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var nama = itemView.findViewById<TextView>(R.id.tv_nama)

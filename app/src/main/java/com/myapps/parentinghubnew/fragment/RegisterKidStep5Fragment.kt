@@ -17,5 +17,13 @@ class RegisterKidStep5Fragment : Fragment(R.layout.fragment_register_kid_step5) 
         btn_selanjutnya.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep6)
         }
+
+        btn_sebelumnya.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
+        iv_back.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 }

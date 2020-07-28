@@ -22,7 +22,7 @@ class RegisterKidStep2Fragment : Fragment(R.layout.fragment_register_kid_step2) 
         }
 
         btn_min.setOnClickListener {
-            if(number==0){
+            if(number==1){
                 et_number.setText(number.toString())
             }
             else{
