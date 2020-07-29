@@ -6,30 +6,31 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/margin_elevation"
     android:layout_margin="@dimen/margin_tiny">
-    
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cv_cover"
-        android:layout_width="70dp"
+        android:layout_width="75dp"
         android:layout_height="75dp"
         android:padding="@dimen/margin_small"
+        app:cardBackgroundColor="#58ADBC"
         app:cardElevation="@dimen/margin_elevation"
         app:cardCornerRadius="@dimen/margin_small"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/kategori_image"
+            android:id="@+id/brands_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/dummy_kategori"/>
+            android:background="@drawable/dummy_logo_brands"/>
 
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/kategori_title"
-        android:text="Semua"
+        android:id="@+id/brands_name"
+        android:text="Nama Brand"
         android:layout_marginTop="@dimen/margin_elevation"
         android:textColor="@color/colorText"
         android:textAppearance="@style/TextBody2Regular"

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="155dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/margin_small"
+    app:cardElevation="@dimen/cardview_default_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dummy_product2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_heart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/product_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextCaptionBold"
+            android:text="OONEW"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextGray"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/product_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextBody2Regular"
+            android:text="Baby Puree Michelin \nSeries"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/margin_tiny"
+            app:layout_constraintTop_toBottomOf="@id/product_brand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:progressTint="@color/colorYellow"
+            app:layout_constraintTop_toBottomOf="@id/product_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rating_total"/>
+
+        <TextView
+            android:id="@+id/rating_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextCaptionBold"
+            android:text="5.0"
+            android:textAllCaps="true"
+            android:textColor="@color/colorText"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            app:layout_constraintTop_toBottomOf="@id/product_name"
+            app:layout_constraintStart_toEndOf="@id/product_rating"/>
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextCaptionBold"
+            android:text="|"
+            android:textAllCaps="true"
+            android:textColor="@color/colorText"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/cardview_default_radius"
+            app:layout_constraintTop_toBottomOf="@id/product_name"
+            app:layout_constraintStart_toEndOf="@id/rating_total"/>
+
+        <TextView
+            android:id="@+id/review_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextCaptionBold"
+            android:text="3.2K"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlueBackground"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            app:layout_constraintTop_toBottomOf="@id/product_name"
+            app:layout_constraintStart_toEndOf="@id/separator"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_tulis_review"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/tulis_review"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textAppearance="@style/TextCaptionRegular"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_button_blue"
+            app:cornerRadius="@dimen/margin_medium_large"
+            app:layout_constraintTop_toBottomOf="@id/review_total"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

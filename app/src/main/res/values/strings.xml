@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ParentingHubNew</string>
     <string name="welcome_title">Hai Parents!</string>
-    <string name="welcome_about">Selamat datang di Parenting Hub! \nPlatform artikel untuk Parenting.</string>
+    <string name="welcome_about">Selamat datang di Parenting Hub! \nPlatform yang menjawab kebutuhan \nKehamilan dan Parentingmu.</string>
     <string name="masuk">Masuk</string>
     <string name="atau_masuk_melalui">Atau masuk melalui</string>
     <string name="facebook">Lanjutkan dengan Facebook</string>
@@ -33,14 +33,14 @@
     <string name="keluarga_semakin_ramai_dengan_si_kecil">Keluarga semakin ramai dengan \nsi Kecil!</string>
     <string name="berapa_jumlah_anak_anda_termasuk_dengan_yang_sedang_dikandung">Berapa jumlah anak Anda termasuk dengan \nyang sedang dikandung?</string>
     <string name="apakah_parents_bersedia_mengisi_profil_si_kecil">Apakah Parents bersedia \nmengisi profil si Kecil?</string>
-    <string name="hebat_parents_satu_langkah_lebih_maju_dari_yang_lainnya">Hebat! Parents satu langkah \nlebih maju dari yang \nlainnya!</string>
+    <string name="hebat_parents_satu_langkah_lebih_maju_dari_yang_lainnya">Yayy! Parents satu langkah \nlebih maju dari yang \nlainnya!</string>
     <string name="ingatkan_saya_dalam">Ingatkan saya dalam</string>
     <string name="tiga_hari">3 Hari</string>
     <string name="tujuh_hari">7 Hari</string>
     <string name="empatbelas_hari">14 Hari</string>
     <string name="dia_sangat_spesial">Dia Sangat Spesial!</string>
     <string name="beritahu_kami_tentang_si_kecil">Beritahu Kami tentang si Kecil</string>
-    <string name="selamat_parents_sebentar_lagi_si_kecil_akan_bergabung_dengan_keluarga">Selamat Parents, sebentar lagi si Kecil \nakan bergabung dengan keluarga!</string>
+    <string name="selamat_parents_sebentar_lagi_si_kecil_akan_bergabung_dengan_keluarga">Selamat Parents, sebentar lagi akan ada \nkeluarga baru yang bergabung.</string>
     <string name="minggu">Minggu</string>
     <string name="umm_sepertinya_ini_kembar">Umm, sepertinya ini kembar!</string>
     <string name="itu_artinya_di_tahun_2027_si_kecil_akan_masuk_sd">Itu artinya di tahun 2027 \nsi Kecil akan masuk SD!</string>
@@ -84,4 +84,13 @@
     <string name="tunadaksa">Tunadaksa</string>
     <string name="kesulitan_belajar">Kesulitan Belajar</string>
     <string name="autisme">Autisme</string>
+    <string name="artikel_untuk_parents">Artikel Untuk Parents</string>
+    <string name="testing_name">Rahara Wiseclaw</string>
+    <string name="kemarin">Kemarin</string>
+    <string name="acara_yang_sedang_berlangsung">Acara Yang Sedang Berlangsung</string>
+    <string name="brands_terpopuler">Brands Terpopuler</string>
+    <string name="review_terbaru">Review Terbaru</string>
+    <string name="paling_banyak_di_review">Paling Banyak di Review</string>
+    <string name="tulis_review">Tulis Review</string>
+    <string name="rekomendasi_untuk_parents">Rekomendasi untuk Parents</string>
 </resources>

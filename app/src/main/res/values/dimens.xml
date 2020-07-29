@@ -15,4 +15,5 @@
     <dimen name="margin_large_xlarge">74dp</dimen>
     <dimen name="margin_xxlarge">80dp</dimen>
     <dimen name="margin_medium_xxlarge">95dp</dimen>
+    <dimen name="margin_xxxlarge">124dp</dimen>
 </resources>

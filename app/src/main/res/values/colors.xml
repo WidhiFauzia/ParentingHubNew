@@ -13,4 +13,9 @@
     <color name="colorBlueLight">#EAFBFF</color>
     <color name="colorBlueFacebook">#1A77F2</color>
     <color name="colorBlueGoogle">#4285F4</color>
+    <color name="colorView">#E9E9E9</color>
+    <color name="colorDarkView">#D1D1D1</color>
+    <color name="colorYellow">#FFC500</color>
+    <color name="colorTextPink">#FFA7CF</color>
+    <color name="colorTextGray">#C0C0C0</color>
 </resources>

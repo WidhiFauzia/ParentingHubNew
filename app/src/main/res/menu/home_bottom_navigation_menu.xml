@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/navigation_beranda_menu"
-        android:icon="@drawable/home"
+        android:icon="@drawable/ic_home_gray"
         android:title="Beranda" />
 
     <item
         android:id="@+id/navigation_artikel_menu"
-        android:icon="@drawable/artikel"
+        android:icon="@drawable/ic_search_gray"
         android:title="Artikel" />
 
     <item
@@ -19,7 +19,7 @@
 
     <item
         android:id="@+id/navigation_journey_menu"
-        android:icon="@drawable/journey"
+        android:icon="@drawable/ic_plane_gray"
         android:title="Journey" />
 
     <item
