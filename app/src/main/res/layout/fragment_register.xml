@@ -71,13 +71,6 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title_white" />
 
-            <ImageView
-                android:id="@+id/bg_bottom_pink"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_rectangle_page_login"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
             <EditText
                 android:id="@+id/et_nama"
                 android:textAppearance="@style/TextBody2Regular"
@@ -239,13 +232,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:gravity="end"
-                android:text="@string/sudah_punya_akun"
+                android:text="@string/belum_punya_akun"
                 android:textColor="@color/colorText"
                 android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small_medium"
                 app:layout_constraintEnd_toStartOf="@+id/tv_title5"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bg_bottom_pink"
                 app:layout_constraintTop_toBottomOf="@id/btn_masuk_google" />
 
             <TextView
@@ -256,11 +251,19 @@
                 android:layout_marginTop="@dimen/margin_medium"
                 android:text="@string/masuk_sekarang"
                 android:textColor="@color/colorBlueBackground"
+                android:layout_marginBottom="@dimen/margin_small_medium"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/tv_title4"
-                app:layout_constraintTop_toBottomOf="@id/btn_masuk_google"
-                app:layout_constraintBottom_toTopOf="@id/bg_bottom_pink"/>
+                app:layout_constraintBottom_toTopOf="@id/bg_bottom_pink"
+                app:layout_constraintTop_toBottomOf="@id/btn_masuk_google" />
+
+            <ImageView
+                android:id="@+id/bg_bottom_pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_rectangle_page_login"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
