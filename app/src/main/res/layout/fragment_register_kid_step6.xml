@@ -74,11 +74,9 @@
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/rcv_feedback"
-        android:paddingStart="@dimen/margin_medium"
-        android:paddingEnd="@dimen/margin_medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
@@ -89,7 +87,7 @@
         android:textAppearance="@style/TextTitleSemiBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium_xlarge"
+        android:layout_marginTop="@dimen/margin_medium_large"
         android:text="@string/bagaimana_perasaan_parents_mengenai_perjalanan_ini"
         android:textColor="@color/colorBlueBackground"
         android:textAlignment="center"

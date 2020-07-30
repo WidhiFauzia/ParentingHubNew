@@ -73,17 +73,17 @@
 
                 <TextView
                     android:id="@+id/tv_title"
-                    style="@style/TextAppearanceBold"
+                    android:textAppearance="@style/TextTitleSemiBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
+                    android:layout_marginTop="@dimen/margin_medium_xxlarge"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
                     android:gravity="center_horizontal"
                     android:text="@string/hebat_parents_satu_langkah_lebih_maju_dari_yang_lainnya"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/colorBlueBackground"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
