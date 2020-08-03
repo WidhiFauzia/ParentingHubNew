@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_small_medium"
             app:cardCornerRadius="@dimen/margin_small"
@@ -52,7 +52,7 @@
                     android:gravity="center"
                     android:text="@string/terima_kasih_parents_telah_berpartisipasi"
                     android:textColor="@color/colorBlueBackground"
-                    android:textAppearance="@style/TextTitleSemiBold"
+                    android:textAppearance="@style/TextBody1SemiBoldRaleway"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/iv_center" />

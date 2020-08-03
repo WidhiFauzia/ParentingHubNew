@@ -33,7 +33,7 @@
         android:text="Nama Brand"
         android:layout_marginTop="@dimen/margin_elevation"
         android:textColor="@color/colorText"
-        android:textAppearance="@style/TextBody2Regular"
+        android:textAppearance="@style/TextCaptionRegular"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -9,9 +9,11 @@
 
     <ImageView
         android:id="@+id/iv_top"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_circle_page_register_step_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
@@ -50,8 +52,8 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_margin="@dimen/margin_medium"
             android:backgroundTint="@color/colorWhite"
             android:clickable="false"
@@ -73,10 +75,10 @@
 
                 <TextView
                     android:id="@+id/tv_title"
-                    android:textAppearance="@style/TextTitleSemiBold"
+                    android:textAppearance="@style/TextBody1SemiBoldRaleway"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_medium_xxlarge"
+                    android:layout_marginTop="@dimen/margin_medium_xlarge"
                     android:layout_marginStart="@dimen/margin_medium"
                     android:layout_marginEnd="@dimen/margin_medium"
                     android:gravity="center_horizontal"
@@ -92,8 +94,8 @@
                     android:id="@+id/btn_sebelumnya"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small_medium"
-                    android:layout_marginEnd="@dimen/margin_small_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
                     android:paddingStart="@dimen/margin_large"
                     android:paddingEnd="@dimen/margin_large"
                     android:text="@string/sebelumnya"
@@ -111,9 +113,9 @@
                     android:id="@+id/btn_selanjutnya"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small_medium"
-                    android:layout_marginTop="@dimen/margin_small_medium"
-                    android:layout_marginEnd="@dimen/margin_small_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_medium"
                     android:paddingStart="@dimen/margin_large"
                     android:paddingEnd="@dimen/margin_large"
                     android:text="@string/selanjutnya"
@@ -138,7 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_sedang_program"
-        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large_xlarge"
         app:layout_constraintTop_toBottomOf="@id/iv_top"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="140dp"
-    android:layout_height="140dp"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
     android:backgroundTint="@color/colorWhite"
     app:cardBackgroundColor="#ccffffff"
     app:cardCornerRadius="@dimen/margin_small_medium"
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Perkembangan"
-            android:textAppearance="@style/TextBody2Regular"
+            android:textAppearance="@style/TextOverlineRegular"
             android:textColor="@color/colorText"
             android:id="@+id/tv_title"
             android:layout_margin="@dimen/margin_small_medium"
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ke-23"
-            android:textAppearance="@style/TextBody2Bold"
+            android:textAppearance="@style/TextCaptionRegular"
             android:textColor="@color/colorText"
             android:id="@+id/tv_nama"
             android:layout_margin="@dimen/margin_small_medium"

@@ -9,9 +9,11 @@
 
     <ImageView
         android:id="@+id/iv_top"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_circle_page_register_step_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
@@ -84,7 +86,7 @@
 
     <TextView
         android:id="@+id/tv_title"
-        android:textAppearance="@style/TextTitleSemiBold"
+        android:textAppearance="@style/TextBody1SemiBoldRaleway"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium_large"

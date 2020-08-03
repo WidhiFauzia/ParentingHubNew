@@ -12,7 +12,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     lateinit var kidListAdapter : KidListAdapter
     lateinit var kategoriArtikerlAdapter : KategoriArtikelAdapter
-    lateinit var recommendedArtikel : RecommendedArticelAdapter
+    lateinit var recommendedArtikel : RecommendedArtikelAdapter
     lateinit var acaraberlangsung : OnGoingEventAdapter
     lateinit var brandsAdapter : BrandsTerpopulerAdapter
     lateinit var newestReviewAdapter : NewestReviewAdapter
@@ -24,7 +24,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         kidListAdapter = KidListAdapter()
         kategoriArtikerlAdapter = KategoriArtikelAdapter()
-        recommendedArtikel = RecommendedArticelAdapter()
+        recommendedArtikel = RecommendedArtikelAdapter()
         acaraberlangsung = OnGoingEventAdapter()
         brandsAdapter = BrandsTerpopulerAdapter()
         newestReviewAdapter = NewestReviewAdapter()
