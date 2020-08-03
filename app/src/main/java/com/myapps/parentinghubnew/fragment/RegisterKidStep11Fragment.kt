@@ -25,6 +25,7 @@ class RegisterKidStep11Fragment : Fragment(R.layout.fragment_register_kid_step11
             val mAlertDialog = mPopUpBuilder.show()
             mPopUpView.iv_close.setOnClickListener {
                 mAlertDialog.dismiss()
+                findNavController().navigate(R.id.actionHomepage)
             }
         }
 

@@ -50,6 +50,19 @@
         <item name="fontFamily">@font/lato_bolditalic</item>
     </style>
 
+    <style name="TextBody1LightRaleway" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextBody1RegularRaleway" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextBody1SemiBoldRaleway" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextBody1MediumRaleway" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+
     <!-- Body 2 -->
     <style name="TextBody2Light" parent="TextAppearance.MaterialComponents.Body2">
         <item name="fontFamily">@font/lato_light</item>
@@ -68,6 +81,19 @@
     </style>
     <style name="TextBody2BoldItalic" parent="TextAppearance.MaterialComponents.Body2">
         <item name="fontFamily">@font/lato_bolditalic</item>
+    </style>
+
+    <style name="TextBody2LightRaleway" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_light</item>
+    </style>
+    <style name="TextBody2RegularRaleway" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+    <style name="TextBody2SemiBoldRaleway" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_semibold</item>
+    </style>
+    <style name="TextBody2MediumRaleway" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/raleway_medium</item>
     </style>
 
     <!-- Button -->

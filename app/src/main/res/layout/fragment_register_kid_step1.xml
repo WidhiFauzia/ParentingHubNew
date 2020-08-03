@@ -24,9 +24,11 @@
 
             <ImageView
                 android:id="@+id/iv_top"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_circle_page_register_step_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <ImageView
@@ -53,11 +55,12 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_sebelumnya"
                 android:textAppearance="@style/TextBody2Regular"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/sebelumnya"
                 android:textColor="@color/colorText"
                 android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_medium"
                 android:layout_marginTop="@dimen/margin_small_medium"
                 android:layout_marginBottom="@dimen/margin_small"
                 android:paddingEnd="@dimen/margin_large"
@@ -74,11 +77,12 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_selanjutnya"
                 android:textAppearance="@style/TextBody2Regular"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/selanjutnya"
                 android:layout_marginTop="@dimen/margin_small_medium"
                 android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_medium"
                 android:paddingEnd="@dimen/margin_large"
                 android:paddingStart="@dimen/margin_large"
                 android:textColor="@color/colorWhite"
@@ -91,7 +95,7 @@
                 app:layout_constraintBottom_toBottomOf="parent" />
 
             <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="185dp"
                 android:id="@+id/cv_anak"
                 android:layout_marginStart="@dimen/margin_medium"
@@ -105,6 +109,8 @@
                 app:cardBackgroundColor="@color/colorWhite"
                 app:cardElevation="@dimen/margin_elevation"
                 app:rippleColor="@color/colorLightBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/iv_top">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -116,7 +122,7 @@
                     <ImageView
                         android:id="@+id/imageView"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/ic_seorang_ibu"
                         android:layout_margin="@dimen/margin_medium"
                         app:layout_constraintTop_toTopOf="parent"
@@ -134,7 +140,7 @@
                         android:layout_gravity="center"
                         android:text="@string/saya_seorang_ibu"
                         android:textAlignment="center"
-                        android:textAppearance="@style/TextTitleSemiBold"
+                        android:textAppearance="@style/TextBody2SemiBoldRaleway"
                         android:textColor="@color/colorBlueBackground"
                         android:layout_margin="@dimen/margin_medium"
                         app:layout_constraintTop_toTopOf="parent"
@@ -149,7 +155,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="185dp"
                 android:id="@+id/cv_ibu"
                 android:layout_margin="@dimen/margin_medium"
@@ -161,6 +167,8 @@
                 app:cardBackgroundColor="@color/colorWhite"
                 app:cardElevation="@dimen/margin_elevation"
                 app:rippleColor="@color/colorLightBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cv_anak">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -172,7 +180,7 @@
                     <ImageView
                         android:id="@+id/imageView1"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/ic_sedang_hamil"
                         android:layout_margin="@dimen/margin_medium"
                         app:layout_constraintTop_toTopOf="parent"
@@ -190,7 +198,7 @@
                         android:layout_gravity="center"
                         android:text="@string/saya_sedang_hamil"
                         android:textAlignment="center"
-                        android:textAppearance="@style/TextTitleSemiBold"
+                        android:textAppearance="@style/TextBody2SemiBoldRaleway"
                         android:textColor="@color/colorBlueBackground"
                         android:layout_margin="@dimen/margin_medium"
                         app:layout_constraintTop_toTopOf="parent"
@@ -205,7 +213,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="185dp"
                 android:id="@+id/cv_program"
                 android:layout_margin="@dimen/margin_medium"
@@ -217,6 +225,8 @@
                 app:cardBackgroundColor="@color/colorWhite"
                 app:cardElevation="@dimen/margin_elevation"
                 app:rippleColor="@color/colorLightBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cv_ibu">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -228,7 +238,7 @@
                     <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/ic_sedang_program"
                         android:layout_margin="@dimen/margin_medium"
                         app:layout_constraintTop_toTopOf="parent"
@@ -246,7 +256,7 @@
                         android:layout_gravity="center"
                         android:text="@string/saya_masih_program"
                         android:textAlignment="center"
-                        android:textAppearance="@style/TextTitleSemiBold"
+                        android:textAppearance="@style/TextBody2SemiBoldRaleway"
                         android:textColor="@color/colorBlueBackground"
                         android:layout_margin="@dimen/margin_medium"
                         app:layout_constraintTop_toTopOf="parent"

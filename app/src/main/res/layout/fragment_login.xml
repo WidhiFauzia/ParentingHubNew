@@ -25,7 +25,7 @@
             <ImageView
                 android:id="@+id/bg_top"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:background="@drawable/ic_circle_page_login"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,14 +114,13 @@
 
             <TextView
                 android:id="@+id/tv_forgetPassword"
-                android:textAppearance="@style/TextBody2Regular"
+                android:textAppearance="@style/TextCaptionRegular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_marginEnd="@dimen/margin_medium_large"
                 android:text="@string/lupa_kata_sandi"
                 android:textColor="@color/colorBlueBackground"
-                android:textSize="16sp"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/txtPass" />
 
@@ -133,10 +132,9 @@
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginEnd="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_medium"
-                android:textAppearance="@style/TextBody2Regular"
+                android:textAppearance="@style/TextBody2Bold"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="true"
-                android:textStyle="bold"
                 android:background="@drawable/bg_button_blue"
                 app:cornerRadius="@dimen/margin_medium_large"
                 app:layout_constraintTop_toBottomOf="@id/tv_forgetPassword"/>
@@ -149,10 +147,9 @@
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginEnd="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_small_medium"
-                android:textAppearance="@style/TextBody2Regular"
+                android:textAppearance="@style/TextBody2Bold"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="false"
-                android:textStyle="bold"
                 android:textSize="16sp"
                 android:background="@drawable/bg_button_blue_facebook"
                 android:drawableStart="@drawable/ic_facebook_login"
@@ -168,11 +165,10 @@
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginEnd="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_small_medium"
-                android:textAppearance="@style/TextBody2Regular"
+                android:textAppearance="@style/TextBody2Bold"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="false"
                 android:textStyle="bold"
-                android:textSize="16sp"
                 android:background="@drawable/bg_button_blue_google"
                 android:drawableStart="@drawable/ic_google_login"
                 android:paddingStart="@dimen/margin_small_medium"
@@ -181,14 +177,14 @@
 
             <TextView
                 android:id="@+id/tv_title4"
-                android:textAppearance="@style/TextBody2Regular"
+                android:textAppearance="@style/TextCaptionRegular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:gravity="end"
                 android:text="@string/belum_punya_akun"
                 android:textColor="@color/colorText"
-                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_elevation"
                 android:layout_marginBottom="@dimen/margin_medium_large"
                 app:layout_constraintEnd_toStartOf="@+id/tv_title5"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -199,7 +195,7 @@
 
             <TextView
                 android:id="@+id/tv_title5"
-                android:textAppearance="@style/TextBody2Regular"
+                android:textAppearance="@style/TextCaptionRegular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_medium"
@@ -215,7 +211,7 @@
             <ImageView
                 android:id="@+id/bg_bottom_pink"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:background="@drawable/ic_rectangle_page_login"
                 app:layout_constraintBottom_toBottomOf="parent" />
 

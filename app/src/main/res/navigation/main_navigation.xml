@@ -233,6 +233,10 @@
         android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep11Fragment"
         tools:layout="@layout/fragment_register_kid_step11">
 
+        <action
+            android:id="@+id/actionHomepage"
+            app:destination="@+id/fragmentBottomNav"/>
+
     </fragment>
 
 </navigation>

@@ -44,10 +44,10 @@
             android:textAllCaps="true"
             android:textStyle="bold"
             android:layout_marginTop="@dimen/margin_medium_large"
-            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
             app:layout_constraintTop_toBottomOf="@id/iv_title"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:textAppearance="@style/TextTitleSemiBold"/>
+            android:textAppearance="@style/TextBody1SemiBoldRaleway"/>
 
         <EditText
             android:id="@+id/et_birth"
@@ -56,8 +56,8 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="@string/tanggal_lahir"
             android:textAppearance="@style/TextBody2Regular"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:focusable="false"
@@ -72,8 +72,8 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="@string/jenis_kelamin"
             android:textAppearance="@style/TextBody2Regular"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:inputType="text"
@@ -88,18 +88,18 @@
             android:textColor="@color/colorBlueBackground"
             android:textStyle="bold"
             android:layout_marginTop="@dimen/margin_medium_large"
-            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
             app:layout_constraintTop_toBottomOf="@id/et_gender"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:textAppearance="@style/TextTitleSemiBold"/>
+            android:textAppearance="@style/TextBody2SemiBoldRaleway"/>
 
         <EditText
             android:id="@+id/et_provinsi"
             android:textAppearance="@style/TextBody2Regular"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:background="@drawable/bg_edittext_lightblue"
@@ -117,8 +117,8 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="@string/kota"
             android:textAppearance="@style/TextBody2Regular"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:inputType="text"
@@ -132,8 +132,8 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="@string/kecamatan"
             android:textAppearance="@style/TextBody2Regular"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:inputType="text"
@@ -147,8 +147,8 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="@string/kode_pos"
             android:textAppearance="@style/TextBody2Regular"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:inputType="text"
@@ -163,8 +163,8 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="@string/alamat_lengkap"
             android:textAppearance="@style/TextBody2Regular"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:maxLength="300"
@@ -181,10 +181,10 @@
             android:text="@string/akun_sosial_media"
             android:textColor="@color/colorBlueBackground"
             android:layout_marginTop="@dimen/margin_medium_large"
-            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
             app:layout_constraintTop_toBottomOf="@id/et_alamat"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:textAppearance="@style/TextTitleSemiBold"/>
+            android:textAppearance="@style/TextBody2SemiBoldRaleway"/>
 
         <TextView
             android:id="@+id/tv_title4"
@@ -196,7 +196,7 @@
             android:layout_marginStart="@dimen/margin_small"
             app:layout_constraintTop_toBottomOf="@id/et_alamat"
             app:layout_constraintLeft_toRightOf="@id/tv_title3"
-            android:textAppearance="@style/TextTitleRegular"/>
+            android:textAppearance="@style/TextBody2Regular"/>
 
         <EditText
             android:id="@+id/et_instagram"
@@ -205,8 +205,8 @@
             android:background="@drawable/bg_edittext_lightblue"
             android:hint="@string/instagram"
             android:textAppearance="@style/TextBody2Regular"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             android:padding="@dimen/margin_medium"
             android:inputType="text"
@@ -226,8 +226,8 @@
             android:hint="@string/twitter"
             android:inputType="text"
             android:padding="@dimen/margin_medium"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             app:layout_constraintTop_toBottomOf="@id/et_instagram"
             tools:ignore="RtlCompat"/>
@@ -242,8 +242,8 @@
             android:hint="@string/akun_facebook"
             android:inputType="text"
             android:padding="@dimen/margin_medium"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             app:layout_constraintTop_toBottomOf="@id/et_twitter" />
 
@@ -257,8 +257,8 @@
             android:hint="@string/youtube_channel"
             android:inputType="text"
             android:padding="@dimen/margin_medium"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             app:layout_constraintTop_toBottomOf="@id/et_facebook" />
 
@@ -272,8 +272,8 @@
             android:hint="@string/blog"
             android:inputType="text"
             android:padding="@dimen/margin_medium"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
             app:layout_constraintTop_toBottomOf="@id/et_youtube" />
 
@@ -282,13 +282,12 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:text="@string/simpan_data"
-            android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:layout_marginStart="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_small"
             android:layout_marginTop="@dimen/margin_medium"
-            android:textAppearance="@style/TextBody2Regular"
+            android:textAppearance="@style/TextBody2Bold"
             android:textColor="@color/colorWhite"
             android:textAllCaps="true"
-            android:textStyle="bold"
             android:background="@drawable/bg_button_blue"
             app:cornerRadius="@dimen/margin_medium_large"
             app:layout_constraintTop_toBottomOf="@id/et_blog"/>
