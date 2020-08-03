@@ -5,7 +5,9 @@
     android:layout_width="280dp"
     android:layout_height="wrap_content"
     android:padding="@dimen/margin_elevation"
-    android:layout_margin="@dimen/margin_small">
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small_medium"
+    android:layout_marginBottom="@dimen/margin_medium">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout1"

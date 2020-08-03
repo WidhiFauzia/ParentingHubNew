@@ -55,6 +55,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_sebelumnya"
                 android:textAppearance="@style/TextBody2Regular"
+                android:textAllCaps="false"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/sebelumnya"
@@ -77,6 +78,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_selanjutnya"
                 android:textAppearance="@style/TextBody2Regular"
+                android:textAllCaps="false"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/selanjutnya"

@@ -6,7 +6,9 @@
     android:backgroundTint="@color/colorWhite"
     app:cardBackgroundColor="#ccffffff"
     app:cardCornerRadius="@dimen/margin_small_medium"
-    android:layout_margin="@dimen/margin_small"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginBottom="@dimen/margin_small"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -43,7 +45,7 @@
             android:textAppearance="@style/TextCaptionRegular"
             android:textColor="@color/colorText"
             android:id="@+id/tv_nama"
-            android:layout_margin="@dimen/margin_small_medium"
+            android:layout_margin="@dimen/margin_small"
             app:layout_constraintTop_toBottomOf="@id/tv_title"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>

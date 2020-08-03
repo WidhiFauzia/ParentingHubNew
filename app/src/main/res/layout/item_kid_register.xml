@@ -9,6 +9,7 @@
     android:layout_marginStart="@dimen/margin_medium"
     android:layout_marginEnd="@dimen/margin_medium"
     android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_small_medium"
     app:cardCornerRadius="@dimen/margin_small"
     app:cardElevation="@dimen/cardview_default_elevation">
 
