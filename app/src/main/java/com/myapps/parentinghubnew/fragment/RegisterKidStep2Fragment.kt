@@ -14,33 +14,33 @@ class RegisterKidStep2Fragment : Fragment(R.layout.fragment_register_kid_step2) 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        et_number.setText(number.toString())
+        etNumber.setText(number.toString())
 
-        btn_add.setOnClickListener {
+        btnAdd.setOnClickListener {
             number += 1
-            et_number.setText(number.toString())
+            etNumber.setText(number.toString())
         }
 
-        btn_min.setOnClickListener {
+        btnMin.setOnClickListener {
             if(number==1){
-                et_number.setText(number.toString())
+                etNumber.setText(number.toString())
             }
             else{
                 number -= 1
-                et_number.setText(number.toString())
+                etNumber.setText(number.toString())
             }
         }
 
-        iv_back.setOnClickListener {
+        ivBack.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        btn_sebelumnya.setOnClickListener {
+        btnBefore.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep2Back)
         }
 
-        btn_selanjutnya.setOnClickListener {
-            var sum = et_number.text
+        btnNext.setOnClickListener {
+            var sum = etNumber.text
             //RegisterKidStep2FragmentDirections.actionKidRegisterStep3(params1 = sum)
             findNavController().navigate(R.id.actionKidRegisterStep3)
         }

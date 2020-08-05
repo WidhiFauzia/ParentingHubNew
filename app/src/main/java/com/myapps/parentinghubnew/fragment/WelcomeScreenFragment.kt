@@ -12,11 +12,11 @@ class WelcomeScreenFragment : Fragment(R.layout.fragment_welcome_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btn_masuk.setOnClickListener {
+        btnWelcome.setOnClickListener {
             findNavController().navigate(R.id.actionLoginFragment)
         }
 
-        tv_title5.setOnClickListener {
+        tvTitle5.setOnClickListener {
             findNavController().navigate(R.id.actionRegisterFragment)
         }
     }

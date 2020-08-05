@@ -14,7 +14,7 @@ class KidListAdapter : RecyclerView.Adapter<KidListAdapter.ViewHolder>() {
     var listAvatar = mutableListOf(R.drawable.ic_baby_girl, R.drawable.ic_girl, R.drawable.ic_boy)
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var nama = itemView.findViewById<TextView>(R.id.tv_nama)
+        var nama = itemView.findViewById<TextView>(R.id.tvName)
         var avatar = itemView.findViewById<ImageView>(R.id.kidAvatar)
     }
 

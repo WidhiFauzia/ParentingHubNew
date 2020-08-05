@@ -6,11 +6,11 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/margin_elevation"
     android:layout_margin="@dimen/margin_tiny">
-    
+
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_cover"
-        android:layout_width="70dp"
-        android:layout_height="75dp"
+        android:id="@+id/cvCover"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
         android:padding="@dimen/margin_small"
         app:cardElevation="@dimen/margin_elevation"
         app:cardCornerRadius="@dimen/margin_small"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/kategori_image"
+            android:id="@+id/ivImageCategory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/dummy_kategori"/>
@@ -28,7 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/kategori_title"
+        android:id="@+id/tvTitleCategory"
         android:text="Semua"
         android:layout_marginTop="@dimen/margin_elevation"
         android:textColor="@color/colorText"
@@ -36,6 +36,6 @@
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cv_cover"/>
+        app:layout_constraintTop_toBottomOf="@id/cvCover"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

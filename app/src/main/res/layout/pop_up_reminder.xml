@@ -18,14 +18,14 @@
             app:cardCornerRadius="@dimen/margin_small"
             app:cardElevation="@dimen/cardview_default_elevation"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_baseline_close_24"
-                android:id="@+id/iv_close"
+                android:id="@+id/ivClose"
                 android:layout_gravity="end"
                 android:layout_margin="@dimen/margin_small"/>
 
@@ -41,11 +41,11 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
                     android:gravity="center"
-                    android:text="@string/ingatkan_saya_dalam"
+                    android:text="@string/remind_me_in"
                     android:textColor="@color/colorText"
                     android:textAppearance="@style/TextBody2Bold"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.cardview.widget.CardView
@@ -55,7 +55,7 @@
                     android:layout_margin="@dimen/margin_medium"
                     app:cardBackgroundColor="@color/colorWhite"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardElevation="0dp"
+                    app:cardElevation="@dimen/margin_zero"
                     android:clickable="true"
                     android:focusable="true"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/tiga_hari"
+                            android:text="@string/three_days"
                             android:textAllCaps="false"
                             android:textColor="@color/colorText"
                             android:textAppearance="@style/TextBody2Regular"
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
                     app:cardBackgroundColor="@color/colorWhite"
-                    app:cardElevation="0dp"
+                    app:cardElevation="@dimen/margin_zero"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:focusable="true"
@@ -107,7 +107,7 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/tujuh_hari"
+                            android:text="@string/seven_days"
                             android:textAllCaps="false"
                             android:textColor="@color/colorText"
                             android:textAppearance="@style/TextBody2Regular"
@@ -126,7 +126,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
                     app:cardBackgroundColor="@color/colorWhite"
-                    app:cardElevation="0dp"
+                    app:cardElevation="@dimen/margin_zero"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
                     android:focusable="true"
@@ -144,7 +144,7 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/empatbelas_hari"
+                            android:text="@string/fourteen_days"
                             android:textAllCaps="false"
                             android:textAppearance="@style/TextBody2Regular"
                             android:textColor="@color/colorText"

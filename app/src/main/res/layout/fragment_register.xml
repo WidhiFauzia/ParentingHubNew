@@ -20,76 +20,76 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/bg_top"
+                android:id="@+id/ivBgTop"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/margin_zero"
                 android:background="@drawable/ic_circle_page_register"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/title_white"
+                android:id="@+id/titleWhite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_medium_large"
                 android:background="@drawable/ic_logo_parenting_hub_white"
-                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintStart_toEndOf="@id/ivBack"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/iv_back"
+                android:id="@+id/ivBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_medium_large"
                 android:background="@drawable/ic_back_white"
-                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:textAppearance="@style/TextTitleSemiBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title"
+                android:id="@+id/tvTitle"
                 android:textColor="@color/colorWhite"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_small"
-                android:text="@string/selamat_datang"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/title_white" />
+                android:text="@string/welcome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleWhite" />
 
             <ImageView
-                android:id="@+id/right_image"
-                android:layout_width="201dp"
-                android:layout_height="120dp"
+                android:id="@+id/ivRightImage"
+                android:layout_width="@dimen/register_image_width"
+                android:layout_height="@dimen/register_image_height"
                 android:layout_marginTop="@dimen/margin_small"
                 android:layout_marginEnd="@dimen/margin_medium_large"
                 android:background="@drawable/ic_family"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/title_white" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleWhite" />
 
             <EditText
-                android:id="@+id/et_nama"
+                android:id="@+id/etNama"
                 android:textAppearance="@style/TextBody2Regular"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/margin_small_large"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginEnd="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:background="@drawable/bg_edittext_lightblue"
-                android:hint="@string/nama_lengkap"
+                android:hint="@string/full_name"
                 android:inputType="text"
                 android:padding="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/right_image" />
+                app:layout_constraintTop_toBottomOf="@id/ivRightImage" />
 
             <EditText
-                android:id="@+id/et_username"
+                android:id="@+id/etUsername"
                 android:textAppearance="@style/TextBody2Regular"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/margin_small_large"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_marginEnd="@dimen/margin_medium_large"
@@ -97,24 +97,24 @@
                 android:hint="@string/username"
                 android:inputType="text"
                 android:padding="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/et_nama" />
+                app:layout_constraintTop_toBottomOf="@id/etNama" />
 
             <EditText
-                android:id="@+id/et_email"
+                android:id="@+id/etEmail"
                 android:textAppearance="@style/TextBody2Regular"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/margin_small_large"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_marginEnd="@dimen/margin_medium_large"
                 android:background="@drawable/bg_edittext_lightblue"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:padding="15dp"
-                app:layout_constraintTop_toBottomOf="@id/et_username" />
+                android:padding="@dimen/margin_medium"
+                app:layout_constraintTop_toBottomOf="@id/etUsername" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtPass"
+                android:id="@+id/tiPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_medium_large"
@@ -124,26 +124,25 @@
                 app:hintAnimationEnabled="false"
                 app:boxBackgroundMode="none"
                 app:hintEnabled="false"
-                app:layout_constraintTop_toBottomOf="@id/et_email"
+                app:layout_constraintTop_toBottomOf="@id/etEmail"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/colorBlueBackground">
 
                 <EditText
-                    android:id="@+id/et_password"
+                    android:id="@+id/etPassword"
                     android:textAppearance="@style/TextBody2Regular"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="@dimen/margin_small_large"
                     android:background="@drawable/bg_edittext_lightblue"
-                    android:hint="@string/kata_sandi"
+                    android:hint="@string/password"
                     android:inputType="textPassword"
                     android:padding="@dimen/margin_medium"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toBottomOf="@id/et_username" />
+                    app:layout_constraintTop_toBottomOf="@id/etUsername" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtPassConfirm"
+                android:id="@+id/tiPassConfirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_medium_large"
@@ -153,7 +152,7 @@
                 app:hintAnimationEnabled="false"
                 app:boxBackgroundMode="none"
                 app:hintEnabled="false"
-                app:layout_constraintTop_toBottomOf="@id/txtPass"
+                app:layout_constraintTop_toBottomOf="@id/tiPass"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/colorBlueBackground">
 
@@ -161,104 +160,109 @@
                     android:id="@+id/et_passwordConfirm"
                     android:textAppearance="@style/TextBody2Regular"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="@dimen/margin_small_large"
                     android:background="@drawable/bg_edittext_lightblue"
-                    android:hint="@string/konfirmasi_kata_sandi"
+                    android:hint="@string/confirm_password"
                     android:inputType="textPassword"
                     android:padding="@dimen/margin_medium"
-                    app:layout_constraintTop_toBottomOf="@id/txtPass" />
+                    app:layout_constraintTop_toBottomOf="@id/tiPass" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_masuk"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="@string/masuk"
+                android:layout_height="@dimen/margin_small_large"
+                android:text="@string/enter"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginEnd="@dimen/margin_medium_large"
-                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_large"
                 android:textAppearance="@style/TextBody2Bold"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="true"
-                android:textSize="16sp"
-                android:background="@drawable/bg_button_blue"
-                app:cornerRadius="@dimen/margin_medium_large"
-                app:layout_constraintTop_toBottomOf="@id/txtPassConfirm"/>
+                android:insetTop="@dimen/margin_zero"
+                android:insetBottom="@dimen/margin_zero"
+                app:backgroundTint="@color/colorBlueBackground"
+                app:cornerRadius="@dimen/margin_medium_small"
+                app:layout_constraintTop_toBottomOf="@id/tiPassConfirm"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_masuk_facebook"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegisterFacebook"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/margin_small_large"
                 android:text="@string/facebook"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginEnd="@dimen/margin_medium_large"
-                android:layout_marginTop="@dimen/margin_small_medium"
+                android:layout_marginTop="@dimen/margin_small"
                 android:textAppearance="@style/TextBody2Bold"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="false"
-                android:textSize="16sp"
-                android:background="@drawable/bg_button_blue_facebook"
-                android:drawableStart="@drawable/ic_facebook_login"
-                android:paddingStart="@dimen/margin_small_medium"
-                app:cornerRadius="@dimen/margin_large"
-                app:layout_constraintTop_toBottomOf="@id/btn_masuk"/>
+                android:insetTop="@dimen/margin_zero"
+                android:insetBottom="@dimen/margin_zero"
+                app:iconTint="@null"
+                app:icon="@drawable/ic_facebook_login"
+                app:backgroundTint="@color/colorBlueFacebook"
+                app:cornerRadius="@dimen/margin_medium_small"
+                app:layout_constraintTop_toBottomOf="@id/btnRegister"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_masuk_google"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegisterGoogle"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/margin_small_large"
                 android:text="@string/google"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginEnd="@dimen/margin_medium_large"
-                android:layout_marginTop="@dimen/margin_small_medium"
+                android:layout_marginTop="@dimen/margin_small"
                 android:textAppearance="@style/TextBody2Bold"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="false"
-                android:textSize="16sp"
+                android:textStyle="bold"
                 android:background="@drawable/bg_button_blue_google"
-                android:drawableStart="@drawable/ic_google_login"
-                android:paddingStart="@dimen/margin_small_medium"
-                app:cornerRadius="@dimen/margin_large"
-                app:layout_constraintTop_toBottomOf="@id/btn_masuk_facebook"/>
+                android:insetTop="@dimen/margin_zero"
+                android:insetBottom="@dimen/margin_zero"
+                app:iconTint="@null"
+                app:icon="@drawable/ic_google_login"
+                app:backgroundTint="@color/colorBlueGoogle"
+                app:cornerRadius="@dimen/margin_medium_small"
+                app:layout_constraintTop_toBottomOf="@id/btnRegisterFacebook"/>
 
             <TextView
-                android:id="@+id/tv_title4"
+                android:id="@+id/tvTitle4"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_large"
                 android:gravity="end"
-                android:text="@string/belum_punya_akun"
+                android:text="@string/do_not_have_account"
                 android:textColor="@color/colorText"
                 android:layout_marginEnd="@dimen/margin_elevation"
                 android:layout_marginBottom="@dimen/margin_small_medium"
-                app:layout_constraintEnd_toStartOf="@+id/tv_title5"
+                app:layout_constraintEnd_toStartOf="@+id/tvTitle5"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/bg_bottom_pink"
-                app:layout_constraintTop_toBottomOf="@id/btn_masuk_google" />
+                app:layout_constraintBottom_toTopOf="@id/ivBgBottom"
+                app:layout_constraintTop_toBottomOf="@id/btnRegisterGoogle"/>
 
             <TextView
-                android:id="@+id/tv_title5"
+                android:id="@+id/tvTitle5"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:text="@string/masuk_sekarang"
+                android:layout_marginTop="@dimen/margin_medium_large"
+                android:text="@string/enter_now"
                 android:textColor="@color/colorBlueBackground"
                 android:layout_marginBottom="@dimen/margin_small_medium"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/tv_title4"
-                app:layout_constraintBottom_toTopOf="@id/bg_bottom_pink"
-                app:layout_constraintTop_toBottomOf="@id/btn_masuk_google" />
+                app:layout_constraintStart_toEndOf="@+id/tvTitle4"
+                app:layout_constraintBottom_toTopOf="@id/ivBgBottom"
+                app:layout_constraintTop_toBottomOf="@id/btnRegisterGoogle"/>
 
             <ImageView
-                android:id="@+id/bg_bottom_pink"
+                android:id="@+id/ivBgBottom"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/margin_zero"
                 android:background="@drawable/ic_rectangle_page_login"
                 app:layout_constraintBottom_toBottomOf="parent" />
 

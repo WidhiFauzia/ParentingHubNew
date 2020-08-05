@@ -25,8 +25,8 @@ class RegisterFormKidAdapter : RecyclerView.Adapter<RegisterFormKidAdapter.ViewH
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindView(i: Int) {
             with(itemView) {
-                et_about.setOnTouchListener(View.OnTouchListener { view: View, event: MotionEvent ->
-                    if (view.id == R.id.et_about) {
+                etAbout.setOnTouchListener(View.OnTouchListener { view: View, event: MotionEvent ->
+                    if (view.id == R.id.etAbout) {
                         view.parent.requestDisallowInterceptTouchEvent(true)
                         if (event.action and MotionEvent.ACTION_MASK == MotionEvent.ACTION_UP) {
                             view.parent.requestDisallowInterceptTouchEvent(false)
@@ -39,7 +39,7 @@ class RegisterFormKidAdapter : RecyclerView.Adapter<RegisterFormKidAdapter.ViewH
                 val month = c.get(Calendar.MONTH)
                 val day = c.get(Calendar.DAY_OF_MONTH)
 
-                et_birth.setOnClickListener {
+                etBirth.setOnClickListener {
                     val dpd = DatePickerDialog(
                         context,
                         DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
@@ -47,25 +47,25 @@ class RegisterFormKidAdapter : RecyclerView.Adapter<RegisterFormKidAdapter.ViewH
                             c.set(year, monthOfYear, dayOfMonth)
                             val formatted = dateFormatter.format(c.time)
 
-                            et_birth.setText(formatted)
+                            etBirth.setText(formatted)
                         }, year, month, day)
 
                     dpd.show()
                 }
 
-                cb_spesial.setOnClickListener {
-                    spesial = cb_spesial.isChecked
-                    if(cb_spesial.isChecked){
-                        layoutKebutuhanSpesial.visibility = View.VISIBLE
+                cbSpecial.setOnClickListener {
+                    spesial = cbSpecial.isChecked
+                    if(cbSpecial.isChecked){
+                        layoutSpecialNeed.visibility = View.VISIBLE
                     }
                     else{
-                        layoutKebutuhanSpesial.visibility = View.GONE
+                        layoutSpecialNeed.visibility = View.GONE
                     }
                 }
 
-                info.setOnClickListener {
+                ivInfo.setOnClickListener {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                        info.tooltipText = "Apakah si Kecil berkebutuhan khusus?"
+                        ivInfo.tooltipText = "Apakah si Kecil berkebutuhan khusus?"
                     }
                     else{
                         Toast.makeText(context, "Apakah si Kecil berkebutuhan khusus?", Toast.LENGTH_LONG).show()

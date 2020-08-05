@@ -15,15 +15,15 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
         activity?.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
 
-        iv_back.setOnClickListener {
+        ivBack.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        tv_title5.setOnClickListener {
+        tvTitle5.setOnClickListener {
             findNavController().navigate(R.id.actionLoginRegisterFragment)
         }
 
-        btn_masuk.setOnClickListener {
+        btnLogin.setOnClickListener {
             findNavController().navigate(R.id.actionHome)
         }
     }

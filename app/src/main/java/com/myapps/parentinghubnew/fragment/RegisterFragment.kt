@@ -15,15 +15,15 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
         activity?.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
 
-        iv_back.setOnClickListener {
+        ivBack.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        btn_masuk.setOnClickListener {
+        btnRegister.setOnClickListener {
             findNavController().navigate(R.id.actionFormRegister)
         }
 
-        tv_title5.setOnClickListener {
+        tvTitle5.setOnClickListener {
             findNavController().navigate(R.id.actionLogin);
         }
     }

@@ -20,11 +20,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="@dimen/margin_zero">
 
             <ImageView
-                android:id="@+id/iv_top"
-                android:layout_width="0dp"
+                android:id="@+id/ivTop"
+                android:layout_width="@dimen/margin_zero"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_circle_page_register_step_1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,33 +32,33 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <ImageView
-                android:id="@+id/iv_title"
+                android:id="@+id/ivTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_parentinghub_x_parentingregistry"
                 android:layout_marginStart="@dimen/margin_medium"
                 android:layout_marginEnd="@dimen/margin_medium"
                 android:layout_marginTop="@dimen/margin_medium_large"
-                app:layout_constraintStart_toEndOf="@id/iv_back"
+                app:layout_constraintStart_toEndOf="@id/ivBack"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/iv_back"
+                android:id="@+id/ivBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_medium_large"
                 android:layout_marginTop="@dimen/margin_small_large"
                 android:background="@drawable/ic_back_white"
-                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_sebelumnya"
+                android:id="@+id/btnBefore"
                 android:textAppearance="@style/TextBody2Regular"
                 android:textAllCaps="false"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/margin_zero"
                 android:layout_height="wrap_content"
-                android:text="@string/sebelumnya"
+                android:text="@string/previous"
                 android:textColor="@color/colorText"
                 android:layout_marginEnd="@dimen/margin_small"
                 android:layout_marginStart="@dimen/margin_medium"
@@ -68,19 +68,19 @@
                 android:paddingStart="@dimen/margin_large"
                 app:backgroundTint="@color/colorLightBlue"
                 app:cornerRadius="@dimen/margin_medium_large"
-                app:layout_constraintEnd_toStartOf="@+id/btn_simpan"
+                app:layout_constraintEnd_toStartOf="@+id/btnSave"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_simpan"
+                android:id="@+id/btnSave"
                 android:textAppearance="@style/TextBody2Regular"
                 android:textAllCaps="false"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/margin_zero"
                 android:layout_height="wrap_content"
-                android:text="@string/simpan_data"
+                android:text="@string/save"
                 android:layout_marginTop="@dimen/margin_small_medium"
                 android:layout_marginBottom="@dimen/margin_small"
                 android:layout_marginEnd="@dimen/margin_medium"
@@ -91,36 +91,36 @@
                 app:cornerRadius="@dimen/margin_medium_large"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btn_sebelumnya"
+                app:layout_constraintStart_toEndOf="@+id/btnBefore"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
-                    android:id="@+id/iv_center"
+                    android:id="@+id/ivCenter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_large_xlarge"
                     android:background="@drawable/ic_sedang_hamil"
-                    app:layout_constraintTop_toBottomOf="@id/iv_top"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@id/ivTop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
-                android:id="@+id/tv_title"
+                android:id="@+id/tvTitle"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_marginBottom="@dimen/margin_medium"
-                android:text="@string/selamat_parents_sebentar_lagi_si_kecil_akan_bergabung_dengan_keluarga"
+                android:text="@string/congrats_parents"
                 android:textColor="@color/colorBlueBackground"
                 android:textAlignment="center"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/iv_center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivCenter"
                 android:layout_gravity="center_horizontal" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/margin_zero"
                     android:layout_height="wrap_content"
                     android:id="@+id/linear1"
                     android:orientation="horizontal"
@@ -129,41 +129,37 @@
                     android:layout_marginTop="@dimen/margin_medium"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_title">
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle">
 
                     <EditText
-                        android:id="@+id/et_gender"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
+                        android:id="@+id/etGender"
+                        android:layout_width="@dimen/margin_zero"
+                        android:layout_height="@dimen/margin_small_large"
                         android:layout_weight="3"
                         android:background="@drawable/bg_edittext_lightblue"
                         android:hint="Perkiraan Umur Janin"
                         android:textAppearance="@style/TextBody2Regular"
                         android:padding="@dimen/margin_medium"
-                        android:inputType="number"
-                        app:layout_constraintTop_toBottomOf="@id/et_birth"/>
+                        android:inputType="number"/>
 
                     <TextView
-                        android:id="@+id/tv_reminder"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
+                        android:id="@+id/tvWeek"
+                        android:layout_width="@dimen/margin_zero"
+                        android:layout_height="@dimen/margin_small_large"
                         android:layout_weight="1"
-                        android:text="@string/minggu"
+                        android:text="@string/week"
                         android:textAppearance="@style/TextBody2Regular"
                         android:textColor="@color/colorText"
-                        android:gravity="center_vertical|center_horizontal"
-                        app:layout_constraintTop_toBottomOf="@id/tv_title"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent" />
+                        android:gravity="center_vertical|center_horizontal"/>
 
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/et_prediksiLahir"
-                    android:layout_width="0dp"
-                    android:layout_height="45dp"
+                    android:id="@+id/etBirtPrediction"
+                    android:layout_width="@dimen/margin_zero"
+                    android:layout_height="@dimen/margin_small_large"
                     android:background="@drawable/bg_edittext_lightblue"
-                    android:hint="Prediksi Kelahiran"
+                    android:hint="@string/birth_prediction"
                     android:textAppearance="@style/TextBody2Regular"
                     android:layout_marginStart="@dimen/margin_medium"
                     android:layout_marginEnd="@dimen/margin_medium"
@@ -177,19 +173,19 @@
                     app:layout_constraintTop_toBottomOf="@id/linear1"/>
 
                 <CheckBox
-                    android:id="@+id/cb_kembar"
+                    android:id="@+id/cbTwin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_medium"
                     android:layout_marginTop="@dimen/margin_small_medium"
                     android:layout_marginBottom="@dimen/margin_xxxlarge"
-                    android:text="@string/umm_sepertinya_ini_kembar"
+                    android:text="@string/it_is_twin"
                     android:textAppearance="@style/TextBody2Regular"
                     android:textColor="@color/colorText"
                     android:buttonTint="@color/colorBlueBackground"
-                    app:layout_constraintBottom_toTopOf="@id/btn_sebelumnya"
-                    app:layout_constraintTop_toBottomOf="@id/et_prediksiLahir"
-                    app:layout_constraintLeft_toLeftOf="parent"/>
+                    app:layout_constraintBottom_toTopOf="@id/btnBefore"
+                    app:layout_constraintTop_toBottomOf="@id/etBirtPrediction"
+                    app:layout_constraintStart_toStartOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

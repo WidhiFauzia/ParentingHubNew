@@ -8,8 +8,8 @@
     tools:context=".fragment.RegisterKidStep2Fragment">
 
     <ImageView
-        android:id="@+id/iv_top"
-        android:layout_width="0dp"
+        android:id="@+id/ivTop"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_circle_page_register_step_1"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,33 +17,33 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
-        android:id="@+id/iv_title"
+        android:id="@+id/ivTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_parentinghub_x_parentingregistry"
         android:layout_marginStart="@dimen/margin_medium"
         android:layout_marginEnd="@dimen/margin_medium"
         android:layout_marginTop="@dimen/margin_medium_large"
-        app:layout_constraintStart_toEndOf="@id/iv_back"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_back"
+        android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_medium_large"
         android:layout_marginTop="@dimen/margin_small_large"
         android:background="@drawable/ic_back_white"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_sebelumnya"
+        android:id="@+id/btnBefore"
         android:textAppearance="@style/TextBody2Regular"
         android:textAllCaps="false"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
-        android:text="@string/sebelumnya"
+        android:text="@string/previous"
         android:textColor="@color/colorText"
         android:layout_marginEnd="@dimen/margin_small"
         android:layout_marginStart="@dimen/margin_medium"
@@ -53,19 +53,19 @@
         android:paddingStart="@dimen/margin_large"
         app:backgroundTint="@color/colorLightBlue"
         app:cornerRadius="@dimen/margin_medium_large"
-        app:layout_constraintEnd_toStartOf="@+id/btn_selanjutnya"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_selanjutnya"
+        android:id="@+id/btnNext"
         android:textAppearance="@style/TextBody2Regular"
         android:textAllCaps="false"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
-        android:text="@string/selanjutnya"
+        android:text="@string/next"
         android:layout_marginTop="@dimen/margin_small_medium"
         android:layout_marginBottom="@dimen/margin_small"
         android:layout_marginEnd="@dimen/margin_medium"
@@ -76,11 +76,11 @@
         app:cornerRadius="@dimen/margin_medium_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_sebelumnya"
+        app:layout_constraintStart_toEndOf="@+id/btnBefore"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,46 +88,46 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
-            android:id="@+id/iv_kid"
+            android:id="@+id/ivKid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium"
             android:background="@drawable/ic_seorang_ibu"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tvTitle"
             android:textAppearance="@style/TextBody1SemiBoldRaleway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium"
-            android:text="@string/keluarga_semakin_ramai_dengan_si_kecil"
+            android:text="@string/family_getting_bigger"
             android:textAlignment="center"
             android:textColor="@color/colorBlueBackground"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_kid" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivKid" />
 
         <TextView
-            android:id="@+id/tv_about"
+            android:id="@+id/tvAbout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/berapa_jumlah_anak_anda_termasuk_dengan_yang_sedang_dikandung"
+            android:text="@string/how_many_kids"
             android:textAppearance="@style/TextBody2Regular"
             android:textColor="@color/colorText"
             android:layout_margin="@dimen/margin_small"
             android:textAlignment="center"
             android:lineHeight="@dimen/margin_medium"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_gravity="center_horizontal" />
 
         <EditText
-            android:id="@+id/et_number"
-            android:layout_width="75dp"
+            android:id="@+id/etNumber"
+            android:layout_width="@dimen/margin_large_xlarge"
             android:layout_height="wrap_content"
             android:text="1"
             android:gravity="center"
@@ -136,29 +136,29 @@
             android:layout_marginTop="@dimen/margin_small"
             android:focusable="false"
             android:textAppearance="@style/TextBody2Regular"
-            app:layout_constraintTop_toBottomOf="@id/tv_about"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/tvAbout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <ImageButton
-            android:id="@+id/btn_add"
+            android:id="@+id/btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_add_circle_24"
             android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginStart="@dimen/margin_elevation"
-            app:layout_constraintTop_toBottomOf="@id/tv_about"
-            app:layout_constraintLeft_toRightOf="@id/et_number"/>
+            app:layout_constraintTop_toBottomOf="@id/tvAbout"
+            app:layout_constraintStart_toEndOf="@id/etNumber"/>
 
         <ImageButton
-            android:id="@+id/btn_min"
+            android:id="@+id/btnMin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_minus"
             android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginEnd="@dimen/margin_elevation"
-            app:layout_constraintTop_toBottomOf="@id/tv_about"
-            app:layout_constraintRight_toLeftOf="@id/et_number"/>
+            app:layout_constraintTop_toBottomOf="@id/tvAbout"
+            app:layout_constraintEnd_toStartOf="@id/etNumber"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

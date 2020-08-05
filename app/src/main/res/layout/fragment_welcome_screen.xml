@@ -8,16 +8,16 @@
     tools:context=".fragment.WelcomeScreenFragment">
 
     <ImageView
-        android:id="@+id/bg_bottom"
-        android:layout_width="0dp"
-        android:layout_height="480dp"
+        android:id="@+id/ivBgBottom"
+        android:layout_width="@dimen/margin_zero"
+        android:layout_height="@dimen/welcome_background_size"
         android:background="@drawable/ic_circle_page_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <ImageView
-        android:id="@+id/iv_title"
+        android:id="@+id/ivTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_logo_parenting_hub_blue"
@@ -27,31 +27,32 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
-        android:id="@+id/iv_center"
-        android:layout_width="0dp"
+        android:id="@+id/ivCenter"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_family"
         android:layout_marginStart="@dimen/margin_medium"
         android:layout_marginEnd="@dimen/margin_medium"
-        android:layout_marginTop="@dimen/margin_medium_xlarge"
+        android:layout_marginTop="@dimen/margin_xxlarge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_title"/>
+        app:layout_constraintTop_toBottomOf="@id/ivTitle"/>
 
     <TextView
-        android:id="@+id/tv_title1"
+        android:id="@+id/tvTitle1"
         android:textAppearance="@style/TextTitleSemiBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium_large"
         android:text="@string/welcome_title"
         android:textColor="@color/colorWhite"
-        app:layout_constraintTop_toBottomOf="@id/iv_center"
+        app:layout_constraintTop_toBottomOf="@id/ivCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvTitle2"/>
 
     <TextView
-        android:id="@+id/tv_title2"
+        android:id="@+id/tvTitle2"
         android:textAppearance="@style/TextBody1Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,93 +60,98 @@
         android:text="@string/welcome_about"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
-        app:layout_constraintTop_toBottomOf="@id/tv_title1"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnWelcome"
         android:gravity="center_horizontal" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_masuk"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:text="@string/masuk"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_small_large"
+        android:text="@string/enter"
         android:layout_marginStart="@dimen/margin_medium_large"
         android:layout_marginEnd="@dimen/margin_medium_large"
         android:layout_marginTop="@dimen/margin_medium"
         android:textAppearance="@style/TextBody2Bold"
         android:textColor="@color/colorBlueBackground"
         android:textAllCaps="true"
-        android:background="@drawable/bg_button_white"
-        app:cornerRadius="@dimen/margin_medium_large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title2"/>
+        android:insetTop="@dimen/margin_zero"
+        android:insetBottom="@dimen/margin_zero"
+        app:backgroundTint="@color/colorWhite"
+        app:cornerRadius="@dimen/margin_medium_small"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle2"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_masuk_facebook"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWelcomeFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_small_large"
         android:text="@string/facebook"
         android:layout_marginStart="@dimen/margin_medium_large"
         android:layout_marginEnd="@dimen/margin_medium_large"
-        android:layout_marginTop="@dimen/margin_small_medium"
+        android:layout_marginTop="@dimen/margin_small"
         android:textAppearance="@style/TextBody2Bold"
         android:textColor="@color/colorWhite"
         android:textAllCaps="false"
-        android:background="@drawable/bg_button_blue_facebook"
-        android:drawableStart="@drawable/ic_facebook_login"
-        android:paddingStart="@dimen/margin_small_medium"
-        app:cornerRadius="@dimen/margin_large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_masuk"/>
+        android:insetTop="@dimen/margin_zero"
+        android:insetBottom="@dimen/margin_zero"
+        app:iconTint="@null"
+        app:icon="@drawable/ic_facebook_login"
+        app:backgroundTint="@color/colorBlueFacebook"
+        app:cornerRadius="@dimen/margin_medium_small"
+        app:layout_constraintTop_toBottomOf="@id/btnWelcome"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_masuk_google"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWelcomeGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_small_large"
         android:text="@string/google"
         android:layout_marginStart="@dimen/margin_medium_large"
         android:layout_marginEnd="@dimen/margin_medium_large"
-        android:layout_marginTop="@dimen/margin_small_medium"
+        android:layout_marginTop="@dimen/margin_small"
         android:textAppearance="@style/TextBody2Bold"
         android:textColor="@color/colorWhite"
         android:textAllCaps="false"
+        android:textStyle="bold"
         android:background="@drawable/bg_button_blue_google"
-        android:drawableStart="@drawable/ic_google_login"
-        android:paddingStart="@dimen/margin_small_medium"
-        app:cornerRadius="@dimen/margin_large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_masuk_facebook"/>
+        android:insetTop="@dimen/margin_zero"
+        android:insetBottom="@dimen/margin_zero"
+        app:iconTint="@null"
+        app:icon="@drawable/ic_google_login"
+        app:backgroundTint="@color/colorBlueGoogle"
+        app:cornerRadius="@dimen/margin_medium_small"
+        app:layout_constraintTop_toBottomOf="@id/btnWelcomeFacebook"/>
 
     <TextView
-        android:id="@+id/tv_title4"
+        android:id="@+id/tvTitle4"
         android:textAppearance="@style/TextCaptionRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium"
         android:gravity="end"
-        android:text="@string/belum_punya_akun"
+        android:text="@string/do_not_have_account"
         android:textColor="@color/colorWhite"
         android:layout_marginEnd="@dimen/margin_elevation"
-        app:layout_constraintEnd_toStartOf="@+id/tv_title5"
+        android:layout_marginBottom="@dimen/margin_small_medium"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_masuk_google" />
+        app:layout_constraintTop_toBottomOf="@id/btnWelcomeGoogle"/>
 
     <TextView
-        android:id="@+id/tv_title5"
+        android:id="@+id/tvTitle5"
         android:textAppearance="@style/TextCaptionRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium"
-        android:text="@string/daftar_sekarang"
+        android:text="@string/register_now"
         android:textColor="@color/colorWhite"
+        android:layout_marginBottom="@dimen/margin_small_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_title4"
-        app:layout_constraintTop_toBottomOf="@id/btn_masuk_google" />
+        app:layout_constraintStart_toEndOf="@+id/tvTitle4"
+        app:layout_constraintTop_toBottomOf="@id/btnWelcomeGoogle"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

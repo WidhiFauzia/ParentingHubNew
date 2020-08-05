@@ -5,33 +5,26 @@
     android:layout_width="280dp"
     android:layout_height="wrap_content"
     android:paddingBottom="@dimen/margin_small"
-    android:layout_margin="@dimen/margin_small">
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small_medium">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layout1"
-        android:paddingBottom="@dimen/margin_small"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="@dimen/margin_small"
-            app:cardBackgroundColor="@color/colorWhite"
-            app:cardCornerRadius="@dimen/margin_small"
-            app:cardElevation="@dimen/margin_one"
-            app:layout_constraintTop_toTopOf="parent">
-
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/cover_acara"
+                android:layout_width="@dimen/margin_zero"
+                android:layout_height="@dimen/margin_zero"
+                android:id="@+id/ivEventCover"
                 android:background="@drawable/dummy_image"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="18:9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
-
-        </com.google.android.material.card.MaterialCardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -43,6 +36,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/tvLimit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Berakhir dalam 3 hari"
@@ -59,7 +53,7 @@
             app:layout_constraintStart_toStartOf="parent"/>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cv_top"
+            android:id="@+id/cvTop"
             android:layout_width="22dp"
             android:layout_height="22dp"
             android:layout_marginTop="@dimen/margin_small"
@@ -71,18 +65,19 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:padding="@dimen/margin_elevation">
 
                 <ImageView
+                    android:id="@+id/ivShare"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/ic_share"
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -90,21 +85,22 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_marginStart="@dimen/margin_elevation"
             android:layout_marginEnd="@dimen/margin_elevation"
-            android:layout_marginTop="@dimen/margin_medium_xxlarge"
+            android:layout_marginTop="@dimen/margin_large_xlarge"
             app:cardBackgroundColor="@color/colorWhite"
             app:cardCornerRadius="@dimen/margin_small"
             app:cardElevation="@dimen/margin_one"
-            app:layout_constraintTop_toBottomOf="@id/cv_top">
+            app:layout_constraintTop_toBottomOf="@id/cvTop"
+            app:cardUseCompatPadding="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/tv_title"
+                    android:id="@+id/tvTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Giveaway Emily Portable Blender"
@@ -115,7 +111,7 @@
                     app:layout_constraintStart_toStartOf="parent"/>
 
                 <TextView
-                    android:id="@+id/tv_pemenang"
+                    android:id="@+id/tvWinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5 Pemenang"
@@ -128,11 +124,11 @@
                     android:paddingEnd="@dimen/margin_small"
                     android:paddingBottom="@dimen/margin_tiny"
                     android:layout_margin="@dimen/margin_small"
-                    app:layout_constraintTop_toBottomOf="@id/tv_title"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
                     app:layout_constraintStart_toStartOf="parent"/>
 
                 <TextView
-                    android:id="@+id/tv_pendaftar"
+                    android:id="@+id/tvParticipants"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="128 Mendaftar"
@@ -145,8 +141,8 @@
                     android:paddingEnd="@dimen/margin_small"
                     android:paddingBottom="@dimen/margin_tiny"
                     android:layout_margin="@dimen/margin_small"
-                    app:layout_constraintTop_toBottomOf="@id/tv_title"
-                    app:layout_constraintStart_toEndOf="@id/tv_pemenang"/>
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                    app:layout_constraintStart_toEndOf="@id/tvWinner"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

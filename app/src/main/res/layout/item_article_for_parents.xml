@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="280dp"
+    android:layout_width="270dp"
     android:layout_height="wrap_content"
     android:padding="@dimen/margin_elevation"
     android:layout_marginStart="@dimen/margin_small"
@@ -17,16 +17,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/profile_image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:id="@+id/ivProfileImage"
             android:src="@drawable/ic_invitation_sent"
             android:backgroundTint="@color/colorLightBlue"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/testing_name"
@@ -34,33 +34,33 @@
             android:layout_marginStart="@dimen/margin_small"
             android:textColor="@color/colorText"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/profile_image"/>
+            app:layout_constraintStart_toEndOf="@id/ivProfileImage"/>
 
         <TextView
-            android:id="@+id/tv_time"
+            android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/kemarin"
+            android:text="@string/yesterday"
             android:textAppearance="@style/TextOverlineRegular"
             android:textAllCaps="false"
             android:textColor="@color/colorText"
             android:layout_marginStart="@dimen/margin_small"
-            android:layout_marginTop="@dimen/cardview_default_elevation"
-            app:layout_constraintTop_toBottomOf="@id/tv_name"
-            app:layout_constraintStart_toEndOf="@id/profile_image"/>
+            android:layout_marginBottom="@dimen/cardview_default_radius"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintStart_toEndOf="@id/ivProfileImage"/>
 
         <ImageView
-            android:id="@+id/bookmark"
+            android:id="@+id/ivBookmark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_bookmark"
             android:layout_marginEnd="@dimen/margin_small"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/heart"/>
+            app:layout_constraintEnd_toStartOf="@id/ivHeart"/>
 
         <ImageView
-            android:id="@+id/heart"
+            android:id="@+id/ivHeart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_heart"
@@ -76,44 +76,56 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/layout1">
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="155dp"
-            android:layout_marginTop="@dimen/margin_small"
-            app:cardBackgroundColor="@color/colorWhite"
-            app:cardCornerRadius="@dimen/margin_small"
-            app:cardElevation="@dimen/margin_one"
-            app:layout_constraintTop_toTopOf="parent">
-
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/artikelImage"
-                android:background="@drawable/dummy_image2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/ivArticleCover"
+                android:background="@drawable/artikel_1"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/margin_tiny"
+                app:layout_constraintDimensionRatio="18:9"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
-        </com.google.android.material.card.MaterialCardView>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvCategoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balita"
+        android:textAppearance="@style/TextOverlineRegular"
+        android:background="@drawable/bg_text_pink_darker"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:paddingStart="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_tiny"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:layout_margin="@dimen/margin_small"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="@dimen/margin_elevation"
         android:layout_marginEnd="@dimen/margin_elevation"
-        android:layout_marginTop="@dimen/margin_xxxlarge"
+        android:layout_marginTop="@dimen/margin_medium_xxlarge"
         app:cardBackgroundColor="@color/colorWhite"
         app:cardCornerRadius="@dimen/margin_small"
         app:cardElevation="@dimen/margin_one"
-        app:layout_constraintTop_toBottomOf="@id/layout1">
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        app:cardUseCompatPadding="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/artikel_title"
+                android:id="@+id/tvArticleTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tips si Kakak akur dengan si Baby"
@@ -125,7 +137,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
-                android:id="@+id/artikel_summary"
+                android:id="@+id/tvArticleSummary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt . . ."
@@ -135,70 +147,70 @@
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginEnd="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_elevation"
-                app:layout_constraintTop_toBottomOf="@id/artikel_title"/>
+                app:layout_constraintTop_toBottomOf="@id/tvArticleTitle"/>
 
             <ImageView
-                android:id="@+id/icon_love"
+                android:id="@+id/ivIconLove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_heart_gray"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_small"
-                app:layout_constraintTop_toBottomOf="@id/artikel_summary"
+                app:layout_constraintTop_toBottomOf="@id/tvArticleSummary"
                 app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
-                android:id="@+id/tv_like"
+                android:id="@+id/tvTotalLike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="128 suka"
                 android:textAppearance="@style/TextCaptionLight"
                 android:layout_marginStart="@dimen/margin_tiny"
                 android:layout_marginTop="@dimen/margin_small"
-                app:layout_constraintTop_toBottomOf="@id/artikel_summary"
-                app:layout_constraintStart_toEndOf="@id/icon_love"/>
+                app:layout_constraintTop_toBottomOf="@id/tvArticleSummary"
+                app:layout_constraintStart_toEndOf="@id/ivIconLove"/>
 
             <ImageView
-                android:id="@+id/icon_eye"
+                android:id="@+id/ivIconEye"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_lihat"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_small"
-                app:layout_constraintTop_toBottomOf="@id/artikel_summary"
-                app:layout_constraintStart_toEndOf="@id/tv_like"/>
+                app:layout_constraintTop_toBottomOf="@id/tvArticleSummary"
+                app:layout_constraintStart_toEndOf="@id/tvTotalLike"/>
 
             <TextView
-                android:id="@+id/tv_read"
+                android:id="@+id/tvTotalRead"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="999+ dilihat"
                 android:textAppearance="@style/TextCaptionLight"
                 android:layout_marginStart="@dimen/margin_tiny"
                 android:layout_marginTop="@dimen/margin_small"
-                app:layout_constraintTop_toBottomOf="@id/artikel_summary"
-                app:layout_constraintStart_toEndOf="@id/icon_eye"/>
+                app:layout_constraintTop_toBottomOf="@id/tvArticleSummary"
+                app:layout_constraintStart_toEndOf="@id/ivIconEye"/>
 
             <ImageView
-                android:id="@+id/icon_comment"
+                android:id="@+id/ivIconComment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_komen"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_small"
-                app:layout_constraintTop_toBottomOf="@id/artikel_summary"
-                app:layout_constraintStart_toEndOf="@id/tv_read"/>
+                app:layout_constraintTop_toBottomOf="@id/tvArticleSummary"
+                app:layout_constraintStart_toEndOf="@id/tvTotalRead"/>
 
             <TextView
-                android:id="@+id/tv_comment"
+                android:id="@+id/tvTotalComment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="30 komentar"
                 android:textAppearance="@style/TextCaptionLight"
                 android:layout_marginStart="@dimen/margin_tiny"
                 android:layout_marginTop="@dimen/margin_small"
-                app:layout_constraintTop_toBottomOf="@id/artikel_summary"
-                app:layout_constraintStart_toEndOf="@id/icon_comment"/>
+                app:layout_constraintTop_toBottomOf="@id/tvArticleSummary"
+                app:layout_constraintStart_toEndOf="@id/ivIconComment"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

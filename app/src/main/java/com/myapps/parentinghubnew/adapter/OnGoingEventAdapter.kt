@@ -19,7 +19,7 @@ class OnGoingEventAdapter : RecyclerView.Adapter<OnGoingEventAdapter.ViewHolder>
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OnGoingEventAdapter.ViewHolder {
-        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_acara_yang_sedang_berlangsung, parent, false))
+        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_on_going_event, parent, false))
     }
 
     override fun getItemCount(): Int {

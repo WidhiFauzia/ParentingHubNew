@@ -7,7 +7,7 @@
     android:layout_margin="@dimen/margin_small">
     
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_cover"
+        android:id="@+id/cvCover"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:cardBackgroundColor="@color/colorWhite"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/cover_image"
+            android:id="@+id/ivCoverImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/dummy_product1"/>
@@ -26,26 +26,26 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="31dp"
         android:layout_height="31dp"
-        android:id="@+id/profile_image"
+        android:id="@+id/ivProfileImage"
         android:src="@drawable/ic_invitation_sent"
         android:backgroundTint="@color/colorLightBlue"
         android:layout_marginTop="@dimen/margin_small"
-        app:layout_constraintTop_toBottomOf="@id/cv_cover"
+        app:layout_constraintTop_toBottomOf="@id/cvCover"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EMBRACING NEW NORMAL WITH MOM'S \nCHRISSY"
         android:textAppearance="@style/TextCaptionBold"
         android:textColor="@color/colorText"
         android:layout_margin="@dimen/margin_small"
-        app:layout_constraintTop_toBottomOf="@id/cv_cover"
-        app:layout_constraintStart_toEndOf="@id/profile_image"/>
+        app:layout_constraintTop_toBottomOf="@id/cvCover"
+        app:layout_constraintStart_toEndOf="@id/ivProfileImage"/>
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/testing_name"
@@ -53,30 +53,30 @@
         android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_elevation"
         android:textColor="@color/colorText"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
-        app:layout_constraintStart_toEndOf="@id/profile_image"/>
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toEndOf="@id/ivProfileImage"/>
 
     <ImageView
-        android:id="@+id/bullets"
+        android:id="@+id/ivBullets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_circle_gray_bigger"
         android:layout_marginTop="@dimen/margin_small"
         android:layout_marginStart="@dimen/margin_elevation"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
-        app:layout_constraintStart_toEndOf="@id/tv_name"/>
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toEndOf="@id/tvName"/>
 
     <TextView
-        android:id="@+id/tv_time"
+        android:id="@+id/tvTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/kemarin"
+        android:text="@string/yesterday"
         android:textAppearance="@style/TextOverlineRegular"
         android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_elevation"
         android:textColor="@color/colorTextGray"
         android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
-        app:layout_constraintStart_toEndOf="@id/bullets"/>
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toEndOf="@id/ivBullets"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

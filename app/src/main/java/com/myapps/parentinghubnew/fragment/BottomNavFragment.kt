@@ -46,7 +46,7 @@ class BottomNavFragment : Fragment(R.layout.fragment_bottom_nav) {
 
     private fun loadFragment(fragment: Fragment) {
         // load fragment
-        fragmentManager?.beginTransaction()?.replace(R.id.container, fragment)?.commit()
+        fragmentManager?.beginTransaction()?.replace(R.id.frameContainer, fragment)?.commit()
 //        supportFragmentManager.beginTransaction()
 //        transaction.replace(R.id.container, fragment)
 //        transaction.commit()

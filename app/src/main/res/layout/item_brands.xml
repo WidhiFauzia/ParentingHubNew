@@ -8,9 +8,9 @@
     android:layout_margin="@dimen/margin_tiny">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_cover"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:id="@+id/cvCover"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
         android:padding="@dimen/margin_small"
         app:cardBackgroundColor="#58ADBC"
         app:cardElevation="@dimen/margin_elevation"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/brands_image"
+            android:id="@+id/ivBrandsLogo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/dummy_logo_brands"/>
@@ -29,14 +29,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/brands_name"
-        android:text="Nama Brand"
+        android:id="@+id/tvBrandsName"
+        android:text="OONEW"
         android:layout_marginTop="@dimen/margin_elevation"
         android:textColor="@color/colorText"
         android:textAppearance="@style/TextCaptionRegular"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cv_cover"/>
+        app:layout_constraintTop_toBottomOf="@id/cvCover"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

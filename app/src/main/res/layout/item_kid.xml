@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="130dp"
-    android:layout_height="130dp"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
     android:backgroundTint="@color/colorWhite"
     app:cardBackgroundColor="#ccffffff"
     app:cardCornerRadius="@dimen/margin_small_medium"
+    app:strokeWidth="0dp"
+    app:strokeColor="#ccffffff"
+    app:cardPreventCornerOverlap="false"
     android:layout_marginStart="@dimen/margin_small"
     android:layout_marginTop="@dimen/margin_small"
     android:layout_marginBottom="@dimen/margin_small"
@@ -13,8 +16,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/margin_medium">
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -23,8 +25,8 @@
             android:background="@drawable/ic_baby_girl"
             android:layout_margin="@dimen/margin_medium"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,11 +34,11 @@
             android:text="Perkembangan"
             android:textAppearance="@style/TextOverlineRegular"
             android:textColor="@color/colorText"
-            android:id="@+id/tv_title"
-            android:layout_margin="@dimen/margin_small_medium"
+            android:id="@+id/tvTitle"
+            android:layout_margin="@dimen/margin_small"
             app:layout_constraintTop_toBottomOf="@id/kidAvatar"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,11 +46,11 @@
             android:text="Ke-23"
             android:textAppearance="@style/TextCaptionRegular"
             android:textColor="@color/colorText"
-            android:id="@+id/tv_nama"
-            android:layout_margin="@dimen/margin_small"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:id="@+id/tvName"
+            android:layout_margin="@dimen/margin_tiny"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

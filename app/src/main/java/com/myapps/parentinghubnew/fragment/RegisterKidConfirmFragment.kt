@@ -15,18 +15,18 @@ class RegisterKidConfirmFragment : Fragment(R.layout.fragment_kid_register_confi
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btn_iya.setOnClickListener {
+        btnYes.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep1)
         }
 
-        btn_ingatkanSayaNanti.setOnClickListener {
+        btnRemindMe.setOnClickListener {
             val mPopUpView = LayoutInflater.from(context).inflate(R.layout.pop_up_reminder, null)
             val mPopUpBuilder = AlertDialog.Builder(context,
                 R.style.CustomDialog
             )
                 .setView(mPopUpView)
             val mAlertDialog = mPopUpBuilder.show()
-            mPopUpView.iv_close.setOnClickListener {
+            mPopUpView.ivClose.setOnClickListener {
                 mAlertDialog.dismiss()
             }
         }

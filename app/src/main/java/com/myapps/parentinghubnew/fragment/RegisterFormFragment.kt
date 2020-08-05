@@ -20,8 +20,8 @@ class RegisterFormFragment : Fragment(R.layout.fragment_register_form)  {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        et_alamat.setOnTouchListener(OnTouchListener { view: View, event: MotionEvent ->
-            if (view.id == R.id.et_alamat) {
+        etAddress.setOnTouchListener(OnTouchListener { view: View, event: MotionEvent ->
+            if (view.id == R.id.etAddress) {
                 view.parent.requestDisallowInterceptTouchEvent(true)
                 if (event.action and MotionEvent.ACTION_MASK == MotionEvent.ACTION_UP) {
                     view.parent.requestDisallowInterceptTouchEvent(false)
@@ -36,20 +36,20 @@ class RegisterFormFragment : Fragment(R.layout.fragment_register_form)  {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        et_birth.setOnClickListener {
+        etBirth.setOnClickListener {
             val dpd = DatePickerDialog(requireContext(), DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
                 // Display Selected date in TextView
                 c.set(year, monthOfYear, dayOfMonth)
                 val formatted = dateFormatter.format(c.time)
 
-                et_birth.setText(formatted)
+                etBirth.setText(formatted)
             }, year, month, day)
             dpd.datePicker.setMaxDate(c.timeInMillis)
             dpd.show()
 
         }
 
-        btn_input_form_register.setOnClickListener {
+        btnInputFormRegister.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegister)
         }
 

@@ -21,11 +21,11 @@ class RegisterKidStep4Fragment : Fragment(R.layout.fragment_register_kid_step4) 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        iv_back.setOnClickListener {
+        ivBack.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        btn_simpan.setOnClickListener {
+        btnSave.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep5)
         }
 
@@ -33,23 +33,19 @@ class RegisterKidStep4Fragment : Fragment(R.layout.fragment_register_kid_step4) 
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        et_prediksiLahir.setOnClickListener {
+        etBirtPrediction.setOnClickListener {
             val dpd = DatePickerDialog(requireContext(), DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
                     // Display Selected date in TextView
                     c.set(year, monthOfYear, dayOfMonth)
                     val formatted = dateFormatter.format(c.time)
 
-                    et_prediksiLahir.setText(formatted)
+                    etBirtPrediction.setText(formatted)
                 }, year, month, day)
 
             dpd.show()
         }
 
-        btn_sebelumnya.setOnClickListener {
-            findNavController().navigateUp()
-        }
-
-        iv_back.setOnClickListener {
+        btnBefore.setOnClickListener {
             findNavController().navigateUp()
         }
 

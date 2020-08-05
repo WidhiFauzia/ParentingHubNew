@@ -3,12 +3,10 @@ package com.myapps.parentinghubnew.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.myapps.parentinghubnew.R
 
-class BrandsTerpopulerAdapter : RecyclerView.Adapter<BrandsTerpopulerAdapter.ViewHolder>() {
+class PopularBrandsAdapter : RecyclerView.Adapter<PopularBrandsAdapter.ViewHolder>() {
 
     var listItem = mutableListOf<Int>(0,1,2,3,4,5,6,7,8,9,10)
 
@@ -20,7 +18,7 @@ class BrandsTerpopulerAdapter : RecyclerView.Adapter<BrandsTerpopulerAdapter.Vie
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BrandsTerpopulerAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularBrandsAdapter.ViewHolder {
         return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_brands, parent, false))
     }
 
@@ -28,7 +26,7 @@ class BrandsTerpopulerAdapter : RecyclerView.Adapter<BrandsTerpopulerAdapter.Vie
         return listItem.size
     }
 
-    override fun onBindViewHolder(holder: BrandsTerpopulerAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: PopularBrandsAdapter.ViewHolder, position: Int) {
         holder.bindView(listItem[position])
     }
 

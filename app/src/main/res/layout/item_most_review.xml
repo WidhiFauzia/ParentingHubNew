@@ -15,7 +15,7 @@
         android:padding="@dimen/margin_small">
 
         <ImageView
-            android:id="@+id/product_image"
+            android:id="@+id/ivImageProduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/dummy_product2"
@@ -24,7 +24,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <ImageView
-            android:id="@+id/heart"
+            android:id="@+id/ivIconHeart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_heart"
@@ -32,7 +32,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/product_brand"
+            android:id="@+id/tvProductBrand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextCaptionRegular"
@@ -40,12 +40,12 @@
             android:textAllCaps="false"
             android:textColor="@color/colorTextGray"
             android:layout_marginTop="@dimen/margin_small"
-            app:layout_constraintTop_toBottomOf="@id/product_image"
+            app:layout_constraintTop_toBottomOf="@id/ivImageProduct"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/product_name"
+            android:id="@+id/tvProductName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextCaptionRegular"
@@ -54,23 +54,23 @@
             android:textColor="@color/colorText"
             android:textAlignment="center"
             android:layout_marginTop="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/product_brand"
+            app:layout_constraintTop_toBottomOf="@id/tvProductBrand"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/product_rating"
+            android:id="@+id/rbProductRating"
             style="?android:attr/ratingBarStyleSmall"
             android:layout_marginTop="@dimen/margin_tiny"
             android:progressTint="@color/colorYellow"
-            app:layout_constraintTop_toBottomOf="@id/product_name"
+            app:layout_constraintTop_toBottomOf="@id/tvProductName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/rating_total"/>
+            app:layout_constraintEnd_toStartOf="@id/tvTotalRating"/>
 
         <TextView
-            android:id="@+id/rating_total"
+            android:id="@+id/tvTotalRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextOverlineRegular"
@@ -79,11 +79,11 @@
             android:textColor="@color/colorText"
             android:layout_marginStart="@dimen/margin_tiny"
             android:layout_marginTop="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/product_name"
-            app:layout_constraintStart_toEndOf="@id/product_rating"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductName"
+            app:layout_constraintStart_toEndOf="@id/rbProductRating"/>
 
         <TextView
-            android:id="@+id/separator"
+            android:id="@+id/tvSeparator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextCaptionBold"
@@ -92,11 +92,11 @@
             android:textColor="@color/colorText"
             android:layout_marginStart="@dimen/margin_tiny"
             android:layout_marginTop="@dimen/cardview_default_radius"
-            app:layout_constraintTop_toBottomOf="@id/product_name"
-            app:layout_constraintStart_toEndOf="@id/rating_total"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductName"
+            app:layout_constraintStart_toEndOf="@id/tvTotalRating"/>
 
         <TextView
-            android:id="@+id/review_total"
+            android:id="@+id/tvTotalReview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextOverlineRegular"
@@ -104,15 +104,15 @@
             android:textAllCaps="true"
             android:textColor="@color/colorBlueBackground"
             android:layout_marginTop="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/product_name"
-            app:layout_constraintStart_toEndOf="@id/separator"
+            app:layout_constraintTop_toBottomOf="@id/tvProductName"
+            app:layout_constraintStart_toEndOf="@id/tvSeparator"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_tulis_review"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWriteReview"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:text="@string/tulis_review"
+            android:layout_height="@dimen/margin_medium_small"
+            android:text="@string/write_review"
             android:layout_marginStart="@dimen/margin_tiny"
             android:layout_marginEnd="@dimen/margin_tiny"
             android:layout_marginTop="@dimen/margin_medium"
@@ -120,8 +120,10 @@
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
             android:background="@drawable/bg_button_blue"
-            app:cornerRadius="@dimen/margin_medium_large"
-            app:layout_constraintTop_toBottomOf="@id/review_total"/>
+            android:insetTop="@dimen/margin_zero"
+            android:insetBottom="@dimen/margin_zero"
+            app:cornerRadius="@dimen/margin_small_medium"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalReview"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

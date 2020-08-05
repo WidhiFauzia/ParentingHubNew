@@ -18,20 +18,20 @@ class RegisterKidFormFragment : Fragment(R.layout.fragment_register_kid_form) {
 
         registerKidFormAdapter = RegisterFormKidAdapter()
 
-        rcv_form_bio.apply {
+        rcvFormBio.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = registerKidFormAdapter
         }
 
-        btn_simpan.setOnClickListener {
+        btnSave.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep4)
         }
 
-        iv_back.setOnClickListener {
+        ivBack.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        btn_sebelumnya.setOnClickListener {
+        btnBefore.setOnClickListener {
             findNavController().navigateUp()
         }
 

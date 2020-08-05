@@ -12,17 +12,17 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/bg_top"
+                android:id="@+id/ivBackgroundTop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_header_homepage"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/et_search"
+                android:id="@+id/etSearch"
                 android:textAppearance="@style/TextBody2Regular"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/margin_small_large"
                 android:layout_marginStart="@dimen/margin_medium"
                 android:layout_marginEnd="@dimen/margin_medium"
                 android:layout_marginTop="@dimen/margin_medium_large"
@@ -39,39 +39,39 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rcv_kid_name"
+                android:id="@+id/rcvKidName"
                 android:paddingTop="@dimen/margin_small"
-                app:layout_constraintTop_toBottomOf="@id/et_search"/>
+                app:layout_constraintTop_toBottomOf="@id/etSearch"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title"
-                android:text="@string/kategori_artikel"
+                android:id="@+id/tvTitle"
+                android:text="@string/article_category"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_margin="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/rcv_kid_name"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@id/rcvKidName"
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lihat_semua"
+                android:text="@string/see_all"
                 android:textColor="@color/colorBlueBackground"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_margin="@dimen/margin_medium"
-                android:id="@+id/tv_lihat_semua"
+                android:id="@+id/tvSeeAll"
                 android:drawablePadding="@dimen/margin_tiny"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-                app:layout_constraintTop_toBottomOf="@id/rcv_kid_name"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@id/rcvKidName"
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rcv_kategori_artikel"
-                app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+                android:id="@+id/rcvArticleCategory"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
 
             <View
                 android:id="@+id/view1"
@@ -79,37 +79,37 @@
                 android:layout_height="@dimen/margin_one"
                 android:background="@color/colorView"
                 android:layout_margin="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/rcv_kategori_artikel"/>
+                app:layout_constraintTop_toBottomOf="@id/rcvArticleCategory"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title1"
-                android:text="@string/artikel_untuk_parents"
+                android:id="@+id/tvTitle1"
+                android:text="@string/article_for_parents"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toBottomOf="@id/view1"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lihat_semua"
+                android:text="@string/see_all"
                 android:textColor="@color/colorBlueBackground"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_margin="@dimen/margin_medium"
-                android:id="@+id/tv_lihat_semua1"
+                android:id="@+id/tvSeeAll1"
                 android:drawablePadding="@dimen/margin_tiny"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintTop_toBottomOf="@id/view1"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rcv_artikel_untuk_parents"
-                app:layout_constraintTop_toBottomOf="@id/tv_title1"/>
+                android:id="@+id/rcvArticelForParents"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle1"/>
 
             <View
                 android:id="@+id/view2"
@@ -117,76 +117,77 @@
                 android:layout_height="@dimen/margin_one"
                 android:background="@color/colorView"
                 android:layout_margin="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/rcv_artikel_untuk_parents"/>
+                app:layout_constraintTop_toBottomOf="@id/rcvArticelForParents"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title2"
-                android:text="@string/acara_yang_sedang_berlangsung"
+                android:id="@+id/tvTitle2"
+                android:text="@string/on_going_event"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toBottomOf="@id/view2"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lihat_semua"
+                android:text="@string/see_all"
                 android:textColor="@color/colorBlueBackground"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_margin="@dimen/margin_medium"
-                android:id="@+id/tv_lihat_semua2"
+                android:id="@+id/tvSeeAll2"
                 android:drawablePadding="@dimen/margin_tiny"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintTop_toBottomOf="@id/view2"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rcv_acara_yang_sedang_berlangsung"
-                app:layout_constraintTop_toBottomOf="@id/tv_title2"/>
+                android:paddingBottom="@dimen/margin_small_medium"
+                android:id="@+id/rcvEvent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle2"/>
 
             <View
-            android:id="@+id/view3"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/margin_one"
-            android:background="@color/colorView"
-            android:layout_margin="@dimen/margin_medium"
-            app:layout_constraintTop_toBottomOf="@id/rcv_acara_yang_sedang_berlangsung"/>
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_one"
+                android:background="@color/colorView"
+                android:layout_margin="@dimen/margin_medium"
+                app:layout_constraintTop_toBottomOf="@id/rcvEvent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title3"
-                android:text="@string/brands_terpopuler"
+                android:id="@+id/tvTitle3"
+                android:text="@string/most_popular_brands"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toBottomOf="@id/view3"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lihat_semua"
+                android:text="@string/see_all"
                 android:textColor="@color/colorBlueBackground"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_margin="@dimen/margin_medium"
-                android:id="@+id/tv_lihat_semua3"
+                android:id="@+id/tvSeeAll3"
                 android:drawablePadding="@dimen/margin_tiny"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintTop_toBottomOf="@id/view3"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/margin_small"
-                android:id="@+id/rcv_brands"
-                app:layout_constraintTop_toBottomOf="@id/tv_title3"/>
+                android:id="@+id/rcvBrands"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle3"/>
 
             <View
                 android:id="@+id/view4"
@@ -194,38 +195,38 @@
                 android:layout_height="@dimen/margin_one"
                 android:background="@color/colorView"
                 android:layout_margin="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/rcv_brands"/>
+                app:layout_constraintTop_toBottomOf="@id/rcvBrands"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title4"
-                android:text="@string/review_terbaru"
+                android:id="@+id/tvTitle4"
+                android:text="@string/newest_review"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toBottomOf="@id/view4"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lihat_semua"
+                android:text="@string/see_all"
                 android:textColor="@color/colorBlueBackground"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_margin="@dimen/margin_medium"
-                android:id="@+id/tv_lihat_semua4"
+                android:id="@+id/tvSeeAll4"
                 android:drawablePadding="@dimen/margin_tiny"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintTop_toBottomOf="@id/view4"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/margin_small"
-                android:id="@+id/rcv_newest_reviews"
-                app:layout_constraintTop_toBottomOf="@id/tv_title4"/>
+                android:id="@+id/rcvNewestReviews"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle4"/>
 
             <View
                 android:id="@+id/view5"
@@ -233,89 +234,90 @@
                 android:layout_height="@dimen/margin_one"
                 android:background="@color/colorView"
                 android:layout_margin="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/rcv_newest_reviews"/>
+                app:layout_constraintTop_toBottomOf="@id/rcvNewestReviews"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title5"
-                android:text="@string/paling_banyak_di_review"
+                android:id="@+id/tvTitle5"
+                android:text="@string/most_review"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toBottomOf="@id/view5"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lihat_semua"
+                android:text="@string/see_all"
                 android:textColor="@color/colorBlueBackground"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_margin="@dimen/margin_medium"
-                android:id="@+id/tv_lihat_semua5"
+                android:id="@+id/tvSeeAll5"
                 android:drawablePadding="@dimen/margin_tiny"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintTop_toBottomOf="@id/view5"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/margin_small"
-                android:id="@+id/rcv_most_reviews"
-                app:layout_constraintTop_toBottomOf="@id/tv_title5"/>
+                android:id="@+id/rcvMostReviews"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle5"/>
 
             <View
                 android:id="@+id/view6"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_one"
                 android:background="@color/colorView"
-                android:layout_margin="@dimen/margin_medium"
-                app:layout_constraintTop_toBottomOf="@id/rcv_most_reviews"/>
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_small_medium"
+                app:layout_constraintTop_toBottomOf="@id/rcvMostReviews"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_title6"
-                android:text="@string/rekomendasi_untuk_parents"
+                android:id="@+id/tvTitle6"
+                android:text="@string/recommendation_for_parents"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextBody1SemiBoldRaleway"
                 android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toBottomOf="@id/view6"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lihat_semua"
+                android:text="@string/see_all"
                 android:textColor="@color/colorBlueBackground"
                 android:textAppearance="@style/TextCaptionRegular"
                 android:layout_margin="@dimen/margin_medium"
-                android:id="@+id/tv_lihat_semua6"
+                android:id="@+id/tvSeeAll6"
                 android:drawablePadding="@dimen/margin_tiny"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
                 app:layout_constraintTop_toBottomOf="@id/view6"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <HorizontalScrollView
-                android:id="@+id/horizontal_scroll"
+                android:id="@+id/horizontalScroll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tv_lihat_semua6"
+                app:layout_constraintTop_toBottomOf="@id/tvSeeAll6"
                 android:scrollbars="none">
 
                 <com.google.android.material.chip.ChipGroup
                     style="@style/Widget.MaterialComponents.Chip.Filter"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/chip_group1"
+                    android:id="@+id/chipgroup1"
                     android:padding="@dimen/margin_small"
                     app:singleLine="true">
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chip_semua"
+                        android:id="@+id/chipAll"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Semua"
@@ -330,7 +332,7 @@
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chip_vlog"
+                        android:id="@+id/chipVlog"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Vlog"
@@ -345,7 +347,7 @@
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chip_unboxing"
+                        android:id="@+id/chipUnboxing"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Unboxing"
@@ -360,7 +362,7 @@
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chip_parenting"
+                        android:id="@+id/chipParenting"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Parenting Talk"
@@ -375,7 +377,7 @@
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chip_review"
+                        android:id="@+id/chipReview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Review"
@@ -390,7 +392,7 @@
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chip_mompreneur"
+                        android:id="@+id/chipMompreneur"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mompreneur"
@@ -410,8 +412,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rcv_rekomendasi"
-                app:layout_constraintTop_toBottomOf="@id/horizontal_scroll"/>
+                android:id="@+id/rcvRecommendation"
+                app:layout_constraintTop_toBottomOf="@id/horizontalScroll"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

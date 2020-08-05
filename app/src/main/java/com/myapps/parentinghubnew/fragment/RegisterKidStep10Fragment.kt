@@ -14,15 +14,15 @@ class RegisterKidStep10Fragment : Fragment(R.layout.fragment_register_kid_step10
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btn_simpan_email.setOnClickListener {
+        btnSaveEmail.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep11)
         }
 
-        iv_back.setOnClickListener {
+        ivBack.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        btn_sebelumnya.setOnClickListener {
+        btnBefore.setOnClickListener {
             findNavController().navigateUp()
         }
     }

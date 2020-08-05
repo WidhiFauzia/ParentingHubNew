@@ -8,8 +8,8 @@
     tools:context=".fragment.RegisterKidStep9Fragment">
 
     <ImageView
-        android:id="@+id/iv_top"
-        android:layout_width="0dp"
+        android:id="@+id/ivTop"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_circle_page_register_step_1"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,33 +17,33 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
-        android:id="@+id/iv_title"
+        android:id="@+id/ivTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_parentinghub_x_parentingregistry"
         android:layout_marginStart="@dimen/margin_medium"
         android:layout_marginEnd="@dimen/margin_medium"
         android:layout_marginTop="@dimen/margin_medium_large"
-        app:layout_constraintStart_toEndOf="@id/iv_back"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_back"
+        android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_medium_large"
         android:layout_marginTop="@dimen/margin_small_large"
         android:background="@drawable/ic_back_white"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_sebelumnya"
+        android:id="@+id/btnBefore"
         android:textAppearance="@style/TextBody2Regular"
         android:textAllCaps="false"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
-        android:text="@string/sebelumnya"
+        android:text="@string/previous"
         android:textColor="@color/colorText"
         android:layout_marginEnd="@dimen/margin_small"
         android:layout_marginStart="@dimen/margin_medium"
@@ -53,19 +53,19 @@
         android:paddingStart="@dimen/margin_large"
         app:backgroundTint="@color/colorLightBlue"
         app:cornerRadius="@dimen/margin_medium_large"
-        app:layout_constraintEnd_toStartOf="@+id/btn_tentu"
+        app:layout_constraintEnd_toStartOf="@+id/btnSure"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_tentu"
+        android:id="@+id/btnSure"
         android:textAppearance="@style/TextBody2Regular"
         android:textAllCaps="false"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
-        android:text="@string/ya_tentu_saja"
+        android:text="@string/yes_sure"
         android:layout_marginTop="@dimen/margin_small_medium"
         android:layout_marginBottom="@dimen/margin_small"
         android:layout_marginEnd="@dimen/margin_medium"
@@ -76,7 +76,7 @@
         app:cornerRadius="@dimen/margin_medium_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_sebelumnya"
+        app:layout_constraintStart_toEndOf="@+id/btnBefore"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -88,41 +88,41 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
-            android:id="@+id/iv_center"
+            android:id="@+id/ivCenter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium"
             android:background="@drawable/ic_life_partner"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tvTitle"
             android:textAppearance="@style/TextBody1SemiBoldRaleway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium"
-            android:text="@string/apakah_anda_ingin_john_melihat_parenting_registry_mu"
+            android:text="@string/do_you_want_partner_see_this"
             android:textColor="@color/colorBlueBackground"
             android:textAlignment="center"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCenter"
             android:layout_gravity="center_horizontal" />
 
         <TextView
-            android:id="@+id/tv_tidak"
+            android:id="@+id/tvNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tidak_sekarang"
+            android:text="@string/not_now"
             android:textAppearance="@style/TextBody2Regular"
             android:textColor="@color/colorText"
             android:layout_margin="@dimen/margin_small"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_gravity="center_horizontal" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

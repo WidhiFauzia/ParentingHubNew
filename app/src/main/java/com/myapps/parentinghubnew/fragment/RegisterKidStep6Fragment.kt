@@ -23,20 +23,20 @@ class RegisterKidStep6Fragment : Fragment(R.layout.fragment_register_kid_step6) 
 
 //            viewPagerFeedback.adapter = viewpageradapter
 
-        rcv_feedback.apply {
+        rcvFeedback.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = viewpageradapter
         }
 
-        btn_selanjutnya.setOnClickListener {
+        btnNext.setOnClickListener {
             findNavController().navigate(R.id.actionKidRegisterStep7)
         }
 
-        iv_back.setOnClickListener {
+        ivBack.setOnClickListener {
             findNavController().navigateUp()
         }
 
-        btn_sebelumnya.setOnClickListener {
+        btnBefore.setOnClickListener {
             findNavController().navigateUp()
         }
 

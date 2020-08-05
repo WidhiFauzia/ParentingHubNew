@@ -17,26 +17,26 @@
                 android:layout_marginBottom="@dimen/margin_small_medium">
 
                 <ImageView
-                    android:id="@+id/iv_feedback"
+                    android:id="@+id/ivFeedback"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_sangat_menyenangkan"
                     android:layout_marginTop="@dimen/margin_medium_large"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
-                    android:id="@+id/tv_title"
+                    android:id="@+id/tvTitle"
                     android:textAppearance="@style/TextBody1SemiBoldRaleway"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_medium_large"
                     android:text="Sangat Tertarik!"
                     android:textColor="@color/colorBlueBackground"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/iv_feedback" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivFeedback" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -11,62 +11,62 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     lateinit var kidListAdapter : KidListAdapter
-    lateinit var kategoriArtikerlAdapter : KategoriArtikelAdapter
-    lateinit var recommendedArtikel : RecommendedArtikelAdapter
-    lateinit var acaraberlangsung : OnGoingEventAdapter
-    lateinit var brandsAdapter : BrandsTerpopulerAdapter
+    lateinit var articleCategoryAdapter: ArticleCategoryAdapter
+    lateinit var recommendedArticle : RecommendedArticleAdapter
+    lateinit var onGoingEventAdapter : OnGoingEventAdapter
+    lateinit var popularBrandsAdapter : PopularBrandsAdapter
     lateinit var newestReviewAdapter : NewestReviewAdapter
     lateinit var mostReviewAdapter: MostReviewAdapter
-    lateinit var rekomendasiAdapter: RekomendasiAdapter
+    lateinit var rekomendasiAdapter: RecommendationAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         kidListAdapter = KidListAdapter()
-        kategoriArtikerlAdapter = KategoriArtikelAdapter()
-        recommendedArtikel = RecommendedArtikelAdapter()
-        acaraberlangsung = OnGoingEventAdapter()
-        brandsAdapter = BrandsTerpopulerAdapter()
+        articleCategoryAdapter = ArticleCategoryAdapter()
+        recommendedArticle = RecommendedArticleAdapter()
+        onGoingEventAdapter = OnGoingEventAdapter()
+        popularBrandsAdapter = PopularBrandsAdapter()
         newestReviewAdapter = NewestReviewAdapter()
         mostReviewAdapter = MostReviewAdapter()
-        rekomendasiAdapter = RekomendasiAdapter()
+        rekomendasiAdapter = RecommendationAdapter()
 
-        rcv_kid_name.apply {
+        rcvKidName.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = kidListAdapter
         }
 
-        rcv_kategori_artikel.apply {
+        rcvArticleCategory.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = kategoriArtikerlAdapter
+            adapter = articleCategoryAdapter
         }
 
-        rcv_artikel_untuk_parents.apply {
+        rcvArticelForParents.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = recommendedArtikel
+            adapter = recommendedArticle
         }
 
-        rcv_acara_yang_sedang_berlangsung.apply {
+        rcvEvent.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = acaraberlangsung
+            adapter = onGoingEventAdapter
         }
 
-        rcv_brands.apply {
+        rcvBrands.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = brandsAdapter
+            adapter = popularBrandsAdapter
         }
 
-        rcv_newest_reviews.apply {
+        rcvNewestReviews.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = newestReviewAdapter
         }
 
-        rcv_most_reviews.apply {
+        rcvMostReviews.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = mostReviewAdapter
         }
 
-        rcv_rekomendasi.apply {
+        rcvRecommendation.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = rekomendasiAdapter
         }

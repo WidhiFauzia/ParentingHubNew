@@ -1,108 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     tools:context=".fragment.RegisterKidConfirmFragment">
 
     <ImageView
-        android:id="@+id/bg_bottom"
+        android:id="@+id/ivBgBottom"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/margin_zero"
         android:background="@drawable/ic_rectangle_page_register_step_1"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <ImageView
-        android:id="@+id/bg_top"
+        android:id="@+id/ivBgTop"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/margin_zero"
         android:background="@drawable/ic_circle_page_register_step_1"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/margin_zero"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_ingatkanSayaNanti"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_button_lightblue"
-            android:text="@string/tidak_ingatkan_saya_nanti"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRemindMe"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="@dimen/margin_small_large"
             android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_small"
             android:layout_marginEnd="@dimen/margin_medium_large"
-            android:layout_marginTop="@dimen/margin_medium"
+            android:insetTop="@dimen/margin_zero"
+            android:insetBottom="@dimen/margin_zero"
+            android:text="@string/remind_me_later"
             android:textAppearance="@style/TextBody2Regular"
             android:textColor="@color/colorText"
-            app:layout_constraintStart_toStartOf="parent"
+            app:backgroundTint="@color/colorLightBlue"
+            app:cornerRadius="@dimen/margin_medium_small"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_iya" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnYes" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_iya"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_button_pink"
-            android:text="@string/ya_saya_bersedia"
-            android:textColor="@color/colorWhite"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnYes"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="@dimen/margin_small_large"
             android:layout_marginStart="@dimen/margin_medium_large"
-            android:layout_marginEnd="@dimen/margin_medium_large"
             android:layout_marginTop="@dimen/margin_medium_large"
-            android:textAppearance="@style/TextBody2Regular"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_about"
-            app:layout_constraintBottom_toTopOf="@id/btn_ingatkanSayaNanti" />
-
-        <TextView
-            android:id="@+id/tv_about"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/kid_register_confirm_text"
-            android:textColor="@color/colorText"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:layout_marginStart="@dimen/margin_medium_large"
             android:layout_marginEnd="@dimen/margin_medium_large"
-            android:layout_marginTop="@dimen/margin_medium"
-            android:lineHeight="@dimen/margin_medium"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:insetTop="@dimen/margin_zero"
+            android:insetBottom="@dimen/margin_zero"
+            android:text="@string/yes_i_do"
             android:textAppearance="@style/TextBody2Regular"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+            android:textColor="@color/colorWhite"
+            app:backgroundTint="@color/colorPink"
+            app:cornerRadius="@dimen/margin_medium_small"
+            app:layout_constraintBottom_toTopOf="@id/btnRemindMe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAbout" />
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tvAbout"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium_large"
+            android:gravity="center_horizontal"
+            android:lineHeight="@dimen/margin_medium"
+            android:text="@string/kid_register_confirm_text"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextBody2Regular"
+            android:textColor="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/selamat_bergabung_parents"
-            android:textColor="@color/colorBlueBackground"
-            android:textAppearance="@style/TextTitleSemiBold"
             android:layout_marginStart="@dimen/margin_medium"
-            android:layout_marginEnd="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_medium"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:text="@string/welcome_parents"
+            android:textAppearance="@style/TextTitleSemiBold"
+            android:textColor="@color/colorBlueBackground"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/iv_title"
+        android:id="@+id/ivTitle"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:background="@drawable/ic_parentinghub_x_parentingregistry"
+        android:layout_height="@dimen/margin_zero"
         android:layout_marginStart="@dimen/margin_medium"
-        android:layout_marginEnd="@dimen/margin_medium"
         android:layout_marginTop="@dimen/margin_medium_large"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/ic_parentinghub_x_parentingregistry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

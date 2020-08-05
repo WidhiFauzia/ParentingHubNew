@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.myapps.parentinghubnew.R
 
-class RecommendedArtikelAdapter : RecyclerView.Adapter<RecommendedArtikelAdapter.ViewHolder>() {
+class RecommendedArticleAdapter : RecyclerView.Adapter<RecommendedArticleAdapter.ViewHolder>() {
 
     var listArtikel = mutableListOf<Int>(0,1,2,3,4,5,6,7,8,9,10)
 
@@ -18,15 +18,15 @@ class RecommendedArtikelAdapter : RecyclerView.Adapter<RecommendedArtikelAdapter
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecommendedArtikelAdapter.ViewHolder {
-        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_artikel_untuk_parents, parent, false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecommendedArticleAdapter.ViewHolder {
+        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_article_for_parents, parent, false))
     }
 
     override fun getItemCount(): Int {
         return listArtikel.size
     }
 
-    override fun onBindViewHolder(holder: RecommendedArtikelAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecommendedArticleAdapter.ViewHolder, position: Int) {
         holder.bindView(listArtikel[position])
     }
 

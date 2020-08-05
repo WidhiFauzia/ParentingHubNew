@@ -28,15 +28,15 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:background="@drawable/bg_circle_image"
-                android:id="@+id/iv_profil"
+                android:id="@+id/ivProfil"
                 android:layout_margin="@dimen/margin_medium"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <EditText
                 android:layout_width="255dp"
                 android:layout_height="75dp"
-                android:id="@+id/et_about"
+                android:id="@+id/etAbout"
                 android:background="@drawable/bg_edittext_lightblue"
                 android:hint="Tentang Si Kecil"
                 android:textAppearance="@style/TextBody2Regular"
@@ -48,7 +48,7 @@
                 android:scrollbarStyle="insideInset"
                 android:scrollbars="vertical"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toRightOf="@id/iv_profil"/>
+                app:layout_constraintStart_toEndOf="@id/ivProfil"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -56,13 +56,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_add_image"
-            android:id="@+id/btn_add_image"
+            android:id="@+id/btnAddImage"
             android:layout_margin="@dimen/margin_medium_xlarge"
-            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
-            android:id="@+id/et_name"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="@drawable/bg_edittext_lightblue"
@@ -76,7 +76,7 @@
             app:layout_constraintTop_toBottomOf="@id/layout1"/>
 
         <EditText
-            android:id="@+id/et_birth"
+            android:id="@+id/etBirth"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="@drawable/bg_edittext_lightblue"
@@ -89,10 +89,10 @@
             android:focusable="false"
             android:inputType="date"
             android:drawableEnd="@drawable/ic_baseline_today_24"
-            app:layout_constraintTop_toBottomOf="@id/et_name"/>
+            app:layout_constraintTop_toBottomOf="@id/etName"/>
 
         <EditText
-            android:id="@+id/et_gender"
+            android:id="@+id/etGender"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="@drawable/bg_edittext_lightblue"
@@ -104,36 +104,36 @@
             android:padding="@dimen/margin_medium"
             android:inputType="text"
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
-            app:layout_constraintTop_toBottomOf="@id/et_birth"/>
+            app:layout_constraintTop_toBottomOf="@id/etBirth"/>
 
         <CheckBox
-            android:id="@+id/cb_spesial"
+            android:id="@+id/cbSpecial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_medium"
-            android:text="@string/dia_sangat_spesial"
+            android:text="@string/the_kid_is_special"
             android:textAppearance="@style/TextBody2Regular"
             android:textColor="@color/colorText"
             android:buttonTint="@color/colorBlueBackground"
-            app:layout_constraintTop_toBottomOf="@id/et_gender"
-            app:layout_constraintLeft_toLeftOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/etGender"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <ImageView
             android:layout_width="@dimen/margin_medium"
             android:layout_height="@dimen/margin_medium"
             android:background="@drawable/ic_info"
-            android:id="@+id/info"
+            android:id="@+id/ivInfo"
             android:layout_marginEnd="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_medium_small"
-            app:layout_constraintTop_toBottomOf="@id/et_gender"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/etGender"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/layoutKebutuhanSpesial"
-            app:layout_constraintTop_toBottomOf="@id/cb_spesial">
+            android:id="@+id/layoutSpecialNeed"
+            app:layout_constraintTop_toBottomOf="@id/cbSpecial">
 
             <LinearLayout
                 android:id="@+id/linear1"
@@ -145,7 +145,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <CheckBox
-                    android:id="@+id/cb_tunanetra"
+                    android:id="@+id/cbTunanetra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tunanetra"
@@ -154,7 +154,7 @@
                     android:buttonTint="@color/colorBlueBackground" />
 
                 <CheckBox
-                    android:id="@+id/cb_tunarungu"
+                    android:id="@+id/cbTunarungu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tunarungu"
@@ -163,15 +163,13 @@
                     android:buttonTint="@color/colorBlueBackground" />
 
                 <CheckBox
-                    android:id="@+id/cb_tunagrahita"
+                    android:id="@+id/cbTunagrahita"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tunagrahita"
                     android:textAppearance="@style/TextBody2Regular"
                     android:textColor="@color/colorText"
-                    android:buttonTint="@color/colorBlueBackground"
-                    app:layout_constraintTop_toBottomOf="@id/et_gender"
-                    app:layout_constraintLeft_toLeftOf="parent"/>
+                    android:buttonTint="@color/colorBlueBackground"/>
 
             </LinearLayout>
 
@@ -185,7 +183,7 @@
                 app:layout_constraintTop_toBottomOf="@id/linear1">
 
                 <CheckBox
-                    android:id="@+id/cb_tunadaksa"
+                    android:id="@+id/cbTunadaksa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tunadaksa"
@@ -194,24 +192,22 @@
                     android:buttonTint="@color/colorBlueBackground" />
 
                 <CheckBox
-                    android:id="@+id/cb_kesulitan_belajar"
+                    android:id="@+id/cbKesulitanBelajar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/kesulitan_belajar"
+                    android:text="@string/difficulty_learning"
                     android:textAppearance="@style/TextBody2Regular"
                     android:textColor="@color/colorText"
                     android:buttonTint="@color/colorBlueBackground" />
 
                 <CheckBox
-                    android:id="@+id/cb_autisme"
+                    android:id="@+id/cbAutisme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/autisme"
                     android:textAppearance="@style/TextBody2Regular"
                     android:textColor="@color/colorText"
-                    android:buttonTint="@color/colorBlueBackground"
-                    app:layout_constraintTop_toBottomOf="@id/et_gender"
-                    app:layout_constraintLeft_toLeftOf="parent"/>
+                    android:buttonTint="@color/colorBlueBackground" />
 
             </LinearLayout>
 

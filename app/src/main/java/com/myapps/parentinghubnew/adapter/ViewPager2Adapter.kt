@@ -16,8 +16,8 @@ class ViewPager2Adapter : RecyclerView.Adapter<ViewPager2Adapter.Pager2ViewHolde
     var imageList = mutableListOf(R.drawable.ic_sangat_menyenangkan, R.drawable.ic_merasa_kewalahan, R.drawable.ic_mencari_tahu)
 
     inner class Pager2ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val tv_title = itemView.findViewById<TextView>(R.id.tv_title)
-        val img_feedback = itemView.findViewById<ImageView>(R.id.iv_feedback)
+        val tv_title = itemView.findViewById<TextView>(R.id.tvTitle)
+        val img_feedback = itemView.findViewById<ImageView>(R.id.ivFeedback)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Pager2ViewHolder {

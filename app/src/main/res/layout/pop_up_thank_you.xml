@@ -17,14 +17,14 @@
             app:cardCornerRadius="@dimen/margin_small"
             app:cardElevation="@dimen/cardview_default_elevation"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_baseline_close_24"
-                android:id="@+id/iv_close"
+                android:id="@+id/ivClose"
                 android:layout_gravity="end"
                 android:layout_margin="@dimen/margin_small"/>
 
@@ -37,25 +37,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_thank_you"
-                    android:id="@+id/iv_center"
+                    android:id="@+id/ivCenter"
                     android:layout_gravity="end"
                     android:layout_margin="@dimen/margin_medium_large"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
                     android:id="@+id/tvAlert"
-                    android:layout_width="match_parent"
+                    android:layout_width="@dimen/margin_zero"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_medium"
                     android:gravity="center"
-                    android:text="@string/terima_kasih_parents_telah_berpartisipasi"
+                    android:text="@string/thanks_for_participating"
                     android:textColor="@color/colorBlueBackground"
                     android:textAppearance="@style/TextBody1SemiBoldRaleway"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/iv_center" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivCenter" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

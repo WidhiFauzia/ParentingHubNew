@@ -15,10 +15,10 @@ class NewestReviewAdapter : RecyclerView.Adapter<NewestReviewAdapter.ViewHolder>
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindView(i: Int) {
             with(itemView) {
-                product_rating.onRatingBarChangeListener =
+                rbProductRating.onRatingBarChangeListener =
                     RatingBar.OnRatingBarChangeListener { p0, p1, p2 ->
                         //Toast.makeText(this@MainActivity, "Given rating is: $p1", Toast.LENGTH_SHORT).show()
-                        rating_total.text = p1.toString()
+                        tvRatingTotal.text = p1.toString()
                     }
             }
         }

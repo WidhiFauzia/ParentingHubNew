@@ -15,7 +15,7 @@
         android:padding="@dimen/margin_medium">
 
         <ImageView
-            android:id="@+id/product_image"
+            android:id="@+id/ivProductImage"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/dummy_product"
@@ -23,7 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
-            android:id="@+id/product_brand"
+            android:id="@+id/tvProductBrand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextOverlineRegular"
@@ -32,10 +32,10 @@
             android:textColor="@color/colorTextGray"
             android:layout_marginStart="@dimen/margin_small"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/product_image"/>
+            app:layout_constraintStart_toEndOf="@id/ivProductImage"/>
 
         <TextView
-            android:id="@+id/product_name"
+            android:id="@+id/tvProductName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextCaptionRegular"
@@ -44,22 +44,22 @@
             android:textColor="@color/colorText"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/product_brand"
-            app:layout_constraintStart_toEndOf="@id/product_image"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductBrand"
+            app:layout_constraintStart_toEndOf="@id/ivProductImage"/>
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/product_rating"
+            android:id="@+id/rbProductRating"
             style="?android:attr/ratingBarStyleSmall"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_tiny"
             android:progressTint="@color/colorYellow"
-            app:layout_constraintTop_toBottomOf="@id/product_name"
-            app:layout_constraintStart_toEndOf="@id/product_image"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductName"
+            app:layout_constraintStart_toEndOf="@id/ivProductImage"/>
 
         <TextView
-            android:id="@+id/rating_total"
+            android:id="@+id/tvRatingTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextOverlineRegular"
@@ -68,11 +68,11 @@
             android:textColor="@color/colorText"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/product_name"
-            app:layout_constraintStart_toEndOf="@id/product_rating"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductName"
+            app:layout_constraintStart_toEndOf="@id/rbProductRating"/>
 
         <TextView
-            android:id="@+id/product_desc"
+            android:id="@+id/tvProductDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextOverlineRegular"
@@ -81,21 +81,21 @@
             android:lineHeight="@dimen/margin_medium"
             android:textColor="@color/colorText"
             android:layout_marginTop="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/product_image"
+            app:layout_constraintTop_toBottomOf="@id/ivProductImage"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="21dp"
             android:layout_height="21dp"
-            android:id="@+id/profile_image"
+            android:id="@+id/ivProfileImage"
             android:src="@drawable/ic_invitation_sent"
             android:backgroundTint="@color/colorLightBlue"
             android:layout_marginTop="@dimen/margin_small"
-            app:layout_constraintTop_toBottomOf="@id/product_desc"
+            app:layout_constraintTop_toBottomOf="@id/tvProductDesc"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/testing_name"
@@ -103,43 +103,43 @@
             android:layout_marginStart="@dimen/margin_tiny"
             android:layout_marginTop="@dimen/margin_small_medium"
             android:textColor="@color/colorText"
-            app:layout_constraintTop_toBottomOf="@id/product_desc"
-            app:layout_constraintStart_toEndOf="@id/profile_image"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductDesc"
+            app:layout_constraintStart_toEndOf="@id/ivProfileImage"/>
 
         <ImageView
-            android:id="@+id/bullets"
+            android:id="@+id/ivBullets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_circle_gray"
             android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginStart="@dimen/margin_elevation"
-            app:layout_constraintTop_toBottomOf="@id/product_desc"
-            app:layout_constraintStart_toEndOf="@id/tv_name"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductDesc"
+            app:layout_constraintStart_toEndOf="@id/tvName"/>
 
         <TextView
-            android:id="@+id/tv_time"
+            android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/kemarin"
+            android:text="@string/yesterday"
             android:textAppearance="@style/TextOverlineRegular"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_small_medium"
             android:textColor="@color/colorTextGray"
             android:textAllCaps="false"
-            app:layout_constraintTop_toBottomOf="@id/product_desc"
-            app:layout_constraintStart_toEndOf="@id/bullets"/>
+            app:layout_constraintTop_toBottomOf="@id/tvProductDesc"
+            app:layout_constraintStart_toEndOf="@id/ivBullets"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/icon_bermanfaat"
+            android:id="@+id/ivIconUseful"
             android:background="@drawable/ic_bermanfaat"
             android:layout_marginTop="@dimen/margin_small"
-            app:layout_constraintTop_toBottomOf="@id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/ivProfileImage"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
-            android:id="@+id/tv_bermanfaat"
+            android:id="@+id/tvUseful"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextOverlineRegular"
@@ -148,44 +148,44 @@
             android:textColor="@color/colorTextGray"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_small"
-            app:layout_constraintTop_toBottomOf="@id/profile_image"
-            app:layout_constraintStart_toEndOf="@id/icon_bermanfaat"/>
+            app:layout_constraintTop_toBottomOf="@id/ivProfileImage"
+            app:layout_constraintStart_toEndOf="@id/ivIconUseful"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:id="@+id/reader1"
+            android:id="@+id/ivReader1"
             android:src="@drawable/dummy_profile1"
             android:backgroundTint="@color/colorLightBlue"
             android:layout_marginTop="@dimen/margin_small_medium"
             android:layout_marginStart="@dimen/margin_small"
-            app:layout_constraintTop_toBottomOf="@id/tv_time"
-            app:layout_constraintStart_toEndOf="@id/tv_bermanfaat"/>
+            app:layout_constraintTop_toBottomOf="@id/tvTime"
+            app:layout_constraintStart_toEndOf="@id/tvUseful"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:id="@+id/reader2"
+            android:id="@+id/ivReader2"
             android:src="@drawable/dummy_profile1"
             android:backgroundTint="@color/colorLightBlue"
             android:layout_marginTop="@dimen/margin_small_medium"
             android:layout_marginStart="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/tv_time"
-            app:layout_constraintStart_toEndOf="@id/reader1"/>
+            app:layout_constraintTop_toBottomOf="@id/tvTime"
+            app:layout_constraintStart_toEndOf="@id/ivReader1"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:id="@+id/reader3"
+            android:id="@+id/tvReader3"
             android:src="@drawable/dummy_profile1"
             android:backgroundTint="@color/colorLightBlue"
             android:layout_marginTop="@dimen/margin_small_medium"
             android:layout_marginStart="@dimen/margin_tiny"
-            app:layout_constraintTop_toBottomOf="@id/tv_time"
-            app:layout_constraintStart_toEndOf="@id/reader2"/>
+            app:layout_constraintTop_toBottomOf="@id/tvTime"
+            app:layout_constraintStart_toEndOf="@id/ivReader2"/>
 
         <TextView
-            android:id="@+id/tv_pendapat"
+            android:id="@+id/tvOpinion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextOverlineRegular"
@@ -194,8 +194,8 @@
             android:textColor="@color/colorTextGray"
             android:layout_marginStart="@dimen/margin_tiny"
             android:layout_marginTop="@dimen/margin_small"
-            app:layout_constraintTop_toBottomOf="@id/profile_image"
-            app:layout_constraintStart_toEndOf="@id/reader3"/>
+            app:layout_constraintTop_toBottomOf="@id/ivProfileImage"
+            app:layout_constraintStart_toEndOf="@id/tvReader3"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
