@@ -16,6 +16,16 @@
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
+    <style name="CustomChipHome" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:textAppearance">@style/TextBody2Regular</item>
+        <item name="rippleColor">@color/colorBlueBackground</item>
+        <item name="chipCornerRadius">@dimen/margin_elevation</item>
+        <item name="chipBackgroundColor">@color/colorWhite</item>
+        <item name="chipStrokeColor">@color/colorTextGray</item>
+        <item name="chipStrokeWidth">@dimen/cardview_default_radius</item>
+    </style>
+
     <!-- Title -->
     <style name="TextTitleLight" parent="TextAppearance.AppCompat.Title">
         <item name="fontFamily">@font/raleway_light</item>

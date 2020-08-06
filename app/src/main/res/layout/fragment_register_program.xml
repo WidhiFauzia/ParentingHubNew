@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlueLight"
-    tools:context=".fragment.RegisterProgramFragment">
+    tools:context=".fragment.register.RegisterProgramFragment">
 
     <ImageView
         android:id="@+id/ivTop"

@@ -92,4 +92,20 @@
     <string name="recommendation_for_parents">Rekomendasi untuk Parents</string>
     <string name="email_address">Alamat E-mail</string>
     <string name="birth_prediction">Prediksi Kelahiran</string>
+    <string name="report">Laporkan</string>
+    <string name="menu_save">Simpan</string>
+    <string name="follow">Ikuti</string>
+    <string name="notification">Nyalakan Pemberitahuan</string>
+    <string name="copy_link">Salin Tautan</string>
+    <string name="share">Bagikan ke...</string>
+    <string name="write_comment">Tulis Komentar...</string>
+    <string name="dummy_detail_article_title">Siap Hadapi New Normal Dengan Emily Portable Blender, Solusi Hidup Sehat Praktis Anti Ribet</string>
+    <string name="detail_content">Halo moms. Apa saja nih yang udah disiapkan untuk menghadapi New Normal ? Sebagai seorang Ibu aku wajib menjaga keluargaku agar tetap menjalankan protokol kesehatan dan pola hidup sehat. Apalagi di masa pandemi seperti sekarang ini. Banyak hal yang bisa dilakukan untuk menerapkan pola hidup sehat agar imun tubuh kita tetap terjaga. Mulai dari berolahraga, meminum asupan vitamin, cukup istirahat dan mengkonsumsi makanan atau minuman sehat. Mengkonsumsi makanan dan minuman sehat ini penting banget ya moms. Apalagi aku masih memiliki anak yang masih balita, jadi aku concern banget untuk mulai membiasakan anakku makan dan minum sehat sedari kecil. Sebagai ibu pekerja, terkadang ngga punya cukup waktu buat nyiapin ini itu ngga moms ? hehe tenang moms ngga sendirian ya, aku pun juga suka gitu. Boro-boro nyiapin smoothies, milkshake atau jus buah, bisa menyediakan sarapan aja udah bersyukur banget. Nah aku sekarang lagi happy banget karena punya solusi baru buat ibu-ibu yang butuh cepat, praktis dan anti ribet untuk menyediakan minuman sehat untuk keluarga nih.</string>
+    <string name="read_more">Baca Juga</string>
+    <string name="recommend_title_one">Menjalankan Pola Hidup Sehat \nDengan Emily Portable Blender</string>
+    <string name="recommend_title_two">Siap Hadapi New Normal \nBersama Emily Portable Blender</string>
+    <string name="total_like">128 suka</string>
+    <string name="real_price"><strike>Rp 449.000</strike></string>
+    <string name="feedback_title">Bagaimana artikel ini menurutmu?</string>
+    <string name="article_tag">Tag Artikel :</string>
 </resources>

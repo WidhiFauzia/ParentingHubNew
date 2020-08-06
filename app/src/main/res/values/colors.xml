@@ -19,4 +19,5 @@
     <color name="colorTextPink">#FFA7CF</color>
     <color name="colorTextGray">#C0C0C0</color>
     <color name="colorTextPinkDarker">#EB77AB</color>
+    <color name="colorTextGrayKindaDark">#898989</color>
 </resources>

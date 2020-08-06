@@ -1,4 +1,4 @@
-package com.myapps.parentinghubnew.fragment
+package com.myapps.parentinghubnew.fragment.register
 
 import android.app.DatePickerDialog
 import android.os.Bundle

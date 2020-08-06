@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.RegisterKidStep7Fragment">
+    tools:context=".fragment.register.RegisterKidStep7Fragment">
 
     <ImageView
         android:id="@+id/ivTop"
@@ -49,8 +49,6 @@
         android:layout_marginStart="@dimen/margin_medium"
         android:layout_marginTop="@dimen/margin_small_medium"
         android:layout_marginBottom="@dimen/margin_small"
-        android:paddingEnd="@dimen/margin_large"
-        android:paddingStart="@dimen/margin_large"
         app:backgroundTint="@color/colorLightBlue"
         app:cornerRadius="@dimen/margin_medium_large"
         app:layout_constraintEnd_toStartOf="@+id/btnHavePartner"
@@ -69,8 +67,6 @@
         android:layout_marginTop="@dimen/margin_small_medium"
         android:layout_marginBottom="@dimen/margin_small"
         android:layout_marginEnd="@dimen/margin_medium"
-        android:paddingEnd="@dimen/margin_medium"
-        android:paddingStart="@dimen/margin_medium"
         android:textColor="@color/colorWhite"
         app:backgroundTint="@color/colorBlueBackground"
         app:cornerRadius="@dimen/margin_medium_large"

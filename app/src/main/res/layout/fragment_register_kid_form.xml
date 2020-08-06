@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.RegisterKidFormFragment">
+    tools:context=".fragment.register.RegisterKidFormFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -56,15 +56,13 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnBefore"
                 android:textAppearance="@style/TextBody2Regular"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/margin_zero"
                 android:layout_height="wrap_content"
                 android:text="@string/previous"
                 android:textColor="@color/colorText"
                 android:layout_marginEnd="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_small_medium"
                 android:layout_marginBottom="@dimen/margin_small"
-                android:paddingEnd="@dimen/margin_large"
-                android:paddingStart="@dimen/margin_large"
                 app:backgroundTint="@color/colorLightBlue"
                 app:cornerRadius="@dimen/margin_medium_large"
                 app:layout_constraintEnd_toStartOf="@+id/btnSave"
@@ -77,13 +75,11 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSave"
                 android:textAppearance="@style/TextBody2Regular"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/margin_zero"
                 android:layout_height="wrap_content"
                 android:text="@string/save"
                 android:layout_marginTop="@dimen/margin_small_medium"
                 android:layout_marginBottom="@dimen/margin_small"
-                android:paddingEnd="@dimen/margin_large"
-                android:paddingStart="@dimen/margin_large"
                 android:textColor="@color/colorWhite"
                 app:backgroundTint="@color/colorBlueBackground"
                 app:cornerRadius="@dimen/margin_medium_large"

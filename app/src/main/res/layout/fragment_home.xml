@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.HomeFragment">
+    tools:context=".fragment.homepage.HomeFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -308,104 +308,11 @@
                 android:scrollbars="none">
 
                 <com.google.android.material.chip.ChipGroup
-                    style="@style/Widget.MaterialComponents.Chip.Filter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/chipgroup1"
                     android:padding="@dimen/margin_small"
-                    app:singleLine="true">
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chipAll"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Semua"
-                        android:textColor="@color/colorTextGray"
-                        android:textAppearance="@style/TextBody2Regular"
-                        android:checkable="true"
-                        app:rippleColor="@color/colorBlueBackground"
-                        app:chipCornerRadius="@dimen/margin_elevation"
-                        app:chipBackgroundColor="@color/colorWhite"
-                        app:chipStrokeColor="@color/colorTextGray"
-                        app:chipStrokeWidth="@dimen/cardview_default_radius"/>
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chipVlog"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Vlog"
-                        android:textColor="@color/colorTextGray"
-                        android:textAppearance="@style/TextBody2Regular"
-                        android:checkable="true"
-                        app:rippleColor="@color/colorBlueBackground"
-                        app:chipCornerRadius="@dimen/margin_elevation"
-                        app:chipBackgroundColor="@color/colorWhite"
-                        app:chipStrokeColor="@color/colorTextGray"
-                        app:chipStrokeWidth="@dimen/cardview_default_radius"/>
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chipUnboxing"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Unboxing"
-                        android:textColor="@color/colorTextGray"
-                        android:textAppearance="@style/TextBody2Regular"
-                        android:checkable="true"
-                        app:rippleColor="@color/colorBlueBackground"
-                        app:chipCornerRadius="@dimen/margin_elevation"
-                        app:chipBackgroundColor="@color/colorWhite"
-                        app:chipStrokeColor="@color/colorTextGray"
-                        app:chipStrokeWidth="@dimen/cardview_default_radius"/>
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chipParenting"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Parenting Talk"
-                        android:textColor="@color/colorTextGray"
-                        android:textAppearance="@style/TextBody2Regular"
-                        android:checkable="true"
-                        app:rippleColor="@color/colorBlueBackground"
-                        app:chipCornerRadius="@dimen/margin_elevation"
-                        app:chipBackgroundColor="@color/colorWhite"
-                        app:chipStrokeColor="@color/colorTextGray"
-                        app:chipStrokeWidth="@dimen/cardview_default_radius"/>
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chipReview"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Review"
-                        android:textColor="@color/colorTextGray"
-                        android:textAppearance="@style/TextBody2Regular"
-                        android:checkable="true"
-                        app:rippleColor="@color/colorBlueBackground"
-                        app:chipCornerRadius="@dimen/margin_elevation"
-                        app:chipBackgroundColor="@color/colorWhite"
-                        app:chipStrokeColor="@color/colorTextGray"
-                        app:chipStrokeWidth="@dimen/cardview_default_radius"/>
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Filter"
-                        android:id="@+id/chipMompreneur"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mompreneur"
-                        android:textColor="@color/colorTextGray"
-                        android:textAppearance="@style/TextBody2Regular"
-                        android:checkable="true"
-                        app:rippleColor="@color/colorBlueBackground"
-                        app:chipCornerRadius="@dimen/margin_elevation"
-                        app:chipBackgroundColor="@color/colorWhite"
-                        app:chipStrokeColor="@color/colorTextGray"
-                        app:chipStrokeWidth="@dimen/cardview_default_radius"/>
-
-                </com.google.android.material.chip.ChipGroup>
+                    app:singleLine="true"/>
 
             </HorizontalScrollView>
 

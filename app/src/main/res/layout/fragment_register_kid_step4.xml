@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.RegisterKidStep4Fragment">
+    tools:context=".fragment.register.RegisterKidStep4Fragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -64,8 +64,6 @@
                 android:layout_marginStart="@dimen/margin_medium"
                 android:layout_marginTop="@dimen/margin_small_medium"
                 android:layout_marginBottom="@dimen/margin_small"
-                android:paddingEnd="@dimen/margin_large"
-                android:paddingStart="@dimen/margin_large"
                 app:backgroundTint="@color/colorLightBlue"
                 app:cornerRadius="@dimen/margin_medium_large"
                 app:layout_constraintEnd_toStartOf="@+id/btnSave"
@@ -84,8 +82,6 @@
                 android:layout_marginTop="@dimen/margin_small_medium"
                 android:layout_marginBottom="@dimen/margin_small"
                 android:layout_marginEnd="@dimen/margin_medium"
-                android:paddingEnd="@dimen/margin_large"
-                android:paddingStart="@dimen/margin_large"
                 android:textColor="@color/colorWhite"
                 app:backgroundTint="@color/colorBlueBackground"
                 app:cornerRadius="@dimen/margin_medium_large"

@@ -1,4 +1,4 @@
-package com.myapps.parentinghubnew.fragment
+package com.myapps.parentinghubnew.fragment.homepage
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.myapps.parentinghubnew.R
 
-class ProfileFragment : Fragment(R.layout.fragment_profile) {
+class JourneyFragment : Fragment(R.layout.fragment_journey) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

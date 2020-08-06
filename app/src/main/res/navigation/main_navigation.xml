@@ -7,7 +7,7 @@
 
     <fragment
     android:id="@+id/fragmentWelcome"
-    android:name="com.myapps.parentinghubnew.fragment.WelcomeScreenFragment"
+    android:name="com.myapps.parentinghubnew.fragment.login.WelcomeScreenFragment"
     tools:layout="@layout/fragment_welcome_screen">
 
         <action
@@ -18,11 +18,15 @@
             android:id="@+id/actionRegisterFragment"
             app:destination="@+id/fragmentRegister"/>
 
+        <action
+            android:id="@+id/actionDetailArticle"
+            app:destination="@+id/fragmentDetailArticleNavigation"/>
+
     </fragment>
 
     <fragment
         android:id="@+id/fragmentLogin"
-        android:name="com.myapps.parentinghubnew.fragment.LoginFragment"
+        android:name="com.myapps.parentinghubnew.fragment.login.LoginFragment"
         tools:layout="@layout/fragment_login">
 
         <action
@@ -37,14 +41,30 @@
 
     <fragment
         android:id="@+id/fragmentBottomNav"
-        android:name="com.myapps.parentinghubnew.fragment.BottomNavFragment"
+        android:name="com.myapps.parentinghubnew.fragment.homepage.BottomNavFragment"
         tools:layout="@layout/fragment_bottom_nav">
 
     </fragment>
 
     <fragment
+        android:id="@+id/fragmentHomepage"
+        android:name="com.myapps.parentinghubnew.fragment.homepage.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/actionDetailArticle"
+            app:destination="@+id/fragmentDetailArticleNavigation"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDetailArticleNavigation"
+        android:name="com.myapps.parentinghubnew.fragment.homepage.DetailArticleFragment"
+        tools:layout="@layout/fragment_detail_article"/>
+
+    <fragment
         android:id="@+id/fragmentRegister"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterFragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterFragment"
         tools:layout="@layout/fragment_register">
 
         <action
@@ -59,7 +79,7 @@
 
     <fragment
         android:id="@+id/fragmentFormRegister"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterFormFragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterFormFragment"
         tools:layout="@layout/fragment_register_form">
 
         <action
@@ -70,7 +90,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegister"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidConfirmFragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidConfirmFragment"
         tools:layout="@layout/fragment_kid_register_confirm">
 
         <action
@@ -81,7 +101,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep1"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep1Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep1Fragment"
         tools:layout="@layout/fragment_register_kid_step1">
 
         <action
@@ -100,7 +120,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep2"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep2Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep2Fragment"
         tools:layout="@layout/fragment_register_kid_step2">
 
         <action
@@ -120,7 +140,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep3"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep3Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep3Fragment"
         tools:layout="@layout/fragment_register_kid_step3">
 
         <action
@@ -135,14 +155,14 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterProgram"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterProgramFragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterProgramFragment"
         tools:layout="@layout/fragment_register_program">
 
     </fragment>
 
     <fragment
         android:id="@+id/fragmentKidRegisterForm"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidFormFragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidFormFragment"
         tools:layout="@layout/fragment_register_kid_form">
 
         <action
@@ -153,7 +173,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep4"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep4Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep4Fragment"
         tools:layout="@layout/fragment_register_kid_step4">
 
         <action
@@ -164,7 +184,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep5"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep5Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep5Fragment"
         tools:layout="@layout/fragment_register_kid_step5">
 
         <action
@@ -175,7 +195,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep6"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep6Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep6Fragment"
         tools:layout="@layout/fragment_register_kid_step6">
 
         <action
@@ -186,7 +206,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep7"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep7Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep7Fragment"
         tools:layout="@layout/fragment_register_kid_step7">
 
         <action
@@ -197,7 +217,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep8"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep8Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep8Fragment"
         tools:layout="@layout/fragment_register_kid_step8">
 
         <action
@@ -208,7 +228,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep9"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep9Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep9Fragment"
         tools:layout="@layout/fragment_register_kid_step9">
 
         <action
@@ -219,7 +239,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep10"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep10Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep10Fragment"
         tools:layout="@layout/fragment_register_kid_step10">
 
         <action
@@ -230,7 +250,7 @@
 
     <fragment
         android:id="@+id/fragmentKidRegisterStep11"
-        android:name="com.myapps.parentinghubnew.fragment.RegisterKidStep11Fragment"
+        android:name="com.myapps.parentinghubnew.fragment.register.RegisterKidStep11Fragment"
         tools:layout="@layout/fragment_register_kid_step11">
 
         <action
